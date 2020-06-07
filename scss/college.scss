@@ -1,0 +1,71 @@
+.college {
+  color: $white;
+  .college_container {
+    @include media-breakpoint-up(sm) {
+      max-width: 100%;
+      display: flex;
+    }
+  }
+  .college_type {
+    @include media-breakpoint-down(md) {
+      padding-top: 0rem;
+    }
+    @include media-breakpoint-down(xs) {
+      padding-top: 7rem;
+    }
+    .college_message {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-left: 4rem;
+      @include media-breakpoint-down(lg) {
+        padding-left: 0rem;
+      }
+      @include media-breakpoint-down(md) {
+        padding-right: 0px;
+      }
+    }
+    .college_name {
+      padding-top: 30px;
+      padding-bottom: 25px;
+      padding-left: 4rem;
+      @include media-breakpoint-down(lg) {
+        padding-left: 0rem;
+      }
+      .college_title {
+        margin-bottom: -4px;
+        line-height: 2.5rem;
+      }
+      .college_field {
+      }
+    }
+
+  }
+  &__art {
+    //background-color: $nav-one-color;
+    background-image: url("../images/nav-one.png");
+    .college_name {
+      background-color: $nav-one-sub-color;
+      background: linear-gradient(180deg,
+              $nav-one-sub-color 90%,
+              #CC302E 10%);
+    }
+  }
+  &__bussiness {
+    //background-color: $nav-two-color;
+    background-image: url("../images/nav-two.png");
+    .college_name {
+      background: linear-gradient(180deg,
+              $nav-two-sub-color 90%,
+              #7AB055 10%);
+    }
+  }
+  &__engineering {
+    //background-color: $nav-three-color;
+    background-image: url("../images/nav-three.png");
+    .college_name {
+      background: linear-gradient(180deg,
+              $nav-three-sub-color 90%,
+              #637286 10%);
+    }
+  }
+}

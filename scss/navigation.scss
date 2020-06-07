@@ -1,0 +1,128 @@
+.navbar {
+  padding: 0px;
+  color: $white;
+  &__primary {
+    width: 100%;
+    height: 80px;
+    background-color: $theme-main-color;
+    @include media-breakpoint-down(xs) {
+      padding-left: 10px;
+      height: 76px;
+    }
+    .navbar__primary_container {
+      flex-direction: column;
+      padding-top: 20px;
+      .navbar-icon {
+        width: 54px;
+        height: 66px;
+        margin-top: -1rem;
+        margin-left: -1.2rem;
+      }
+    }
+    .navbar-brand {
+    }
+    .logo {
+      z-index: 1050;
+      position: relative;
+      img {
+        width: 8.5rem;
+        height: 8.5rem;
+        object-fit: cover;
+        margin-bottom: 15px;
+        @include media-breakpoint-down(xs) {
+          width: 90px;
+          height: 90px;
+          margin-top: 10px;
+        }
+      }
+    }
+    .navbar-title {
+      display: flex;
+      align-items: center;
+      @include media-breakpoint-down(xs) {
+        margin: auto;
+      }
+    }
+  }
+  &__secondary {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 80px;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    @include media-breakpoint-down(xs) {
+      top: 75px;
+      height: 35px;
+      justify-content: flex-end !important;
+      padding-right: 10px;
+    }
+    p {
+      margin-bottom: 0px;
+      position: absolute;
+      left: 15%;
+      @include media-breakpoint-down(lg) {
+        left: 20%;
+      }
+      @include media-breakpoint-down(md) {
+        left: 25%;
+      }
+      @include media-breakpoint-down(xs) {
+        left: 28%;
+      }
+    }
+  }
+}
+
+.navbars-menu {
+  display: none;
+  position: fixed;
+  border: 15px solid $blue-gray;
+  left: 166px;
+  z-index: 1060;
+  top: 35px;
+  background-color: $gray-100;
+
+  .contact-link {
+    a {
+      color: $orange;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    left: 0px;
+    position: relative;
+    top: 0px;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  a {
+    color: $black;
+  }
+  &__admission {
+    padding-right: 0px;
+    padding-left: 0px;
+    p {
+      flex-grow: 1;
+      margin: auto;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      a {
+        width: 100%;
+      }
+    }
+    p:nth-of-type(1) {
+      background-color: $orange;
+    }
+    p:nth-of-type(2) {
+      background-color: darkblue;
+    }
+    p:nth-of-type(3) {
+      background-color: $green;
+    }
+  }
+}

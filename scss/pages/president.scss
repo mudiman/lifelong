@@ -1,0 +1,32 @@
+body.president {
+  .slide {
+    img {
+      width: 100%;
+      height: 407px;
+      object-fit: cover;
+    }
+  }
+  .office {
+    &__item {
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 6rem;
+      color: $white;
+      text-align: center;
+    }
+    &__item:nth-of-type(1) {
+      background-color: maroon;
+    }
+    &__item:nth-of-type(2) {
+      background-color: #C00000;
+    }
+    &__item:nth-of-type(3) {
+      background-color: #DC472E;
+    }
+    &__description {
+      padding-top: 20px;
+    }
+  }
+}

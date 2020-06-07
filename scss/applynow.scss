@@ -1,0 +1,156 @@
+.apply_now {
+  background-color: $apply-now-one-color;
+  color: $white;
+  @include media-breakpoint-down(xs) {
+    padding-top: 40px;
+  }
+  &__container {
+    @include media-breakpoint-down(xs) {
+      margin: 0px;
+      margin-bottom: -38px;
+    }
+    &__img {
+      @include media-breakpoint-only(sm) {
+        text-align: center;
+      }
+      @include media-breakpoint-down(xs) {
+        position: relative;
+        top: -38px;
+        left: -31px;
+      }
+      img {
+        @include media-breakpoint-down(xs) {
+          width: 170px;
+          height: 170px;
+          object-fit: cover;
+        }
+      }
+    }
+
+    &__msg {
+      .you {
+        margin-top:  9px;
+      }
+      @include media-breakpoint-down(xs) {
+        order: -1;
+      }
+      &__question {
+        margin-bottom: 15px;
+        .you {
+          @include media-breakpoint-up(md) {
+            font-size: 2.8rem;
+          }
+        }
+        &__pre {
+          @include media-breakpoint-up(md) {
+            font-size: 2rem;
+          }
+        }
+        &__post {
+          @include media-breakpoint-up(md) {
+            font-size: 2rem;
+          }
+        }
+      }
+
+      &__button {
+        @include media-breakpoint-down(xs) {
+          text-align: right !important;
+        }
+        button {
+          padding: .5rem 5rem;
+          @include media-breakpoint-down(md) {
+            margin-bottom: 10px;
+          }
+          @include media-breakpoint-down(xs) {
+            padding: .5rem 2rem;
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+.apply_now_1 {
+  color: $white;
+  position: relative;
+  //background-image: url("../images/apply-now-2.webp");
+  background-color: #0c5460;
+  height: 210px;
+  @include media-breakpoint-down(lg) {
+    padding-top: 20px;
+  }
+  @include media-breakpoint-down(sm) {
+    //background-image: url("../images/apply-now-2-mob.webp");
+    height: 170px;
+    padding-top: 0px;
+  }
+
+  &__container {
+    &__msg {
+      .you {
+        margin-top:  9px;
+      }
+      &__qc{
+        z-index: 2;
+        @include media-breakpoint-down(xs) {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+      }
+      &__question {
+        margin-bottom: 15px;
+        .you {
+          @include media-breakpoint-up(md) {
+            font-size: 2.8rem;
+          }
+        }
+        &__pre {
+          @include media-breakpoint-up(md) {
+            font-size: 2rem;
+          }
+        }
+        &__post {
+          @include media-breakpoint-up(md) {
+            font-size: 2rem;
+          }
+        }
+      }
+
+      &__button {
+        @include media-breakpoint-down(xs) {
+          transform: translateX(-16%)
+        }
+        button {
+          padding: .5rem 5rem;
+          margin-left: 12rem;
+          @include media-breakpoint-down(md) {
+            margin-left: 0;
+            margin-bottom: 20px;
+          }
+          @include media-breakpoint-down(xs) {
+            padding: .5rem 2rem;
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+    &__img {
+      @include media-breakpoint-only(sm) {
+        text-align: center;
+      }
+      @include media-breakpoint-down(lg) {
+        position: absolute;
+        right: -20px;
+        bottom: 0px;
+        padding: 0px;
+        z-index: 1;
+      }
+      img {
+        @include media-breakpoint-down(xs) {
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.newsletter {
+  background-color: #C00000;
+  padding: 20px 0;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  @include media-breakpoint-down(xs) {
+    padding: 30px 0;
+    display: block;
+  }
+  h3 {
+    margin-right: 20px;
+    @include media-breakpoint-down(xs) {
+      width: 360px;
+      margin-bottom: 15px;
+    }
+  }
+  input {
+    width: 700px;
+    @include media-breakpoint-down(lg) {
+      width: 580px;
+    }
+    @include media-breakpoint-down(md) {
+      width: 360px;
+    }
+    @include media-breakpoint-down(sm) {
+      width: 315px;
+    }
+    &::placeholder {
+
+      @include media-breakpoint-down(sm) {
+        font-size: 14px;
+      }
+    }
+  }
+}

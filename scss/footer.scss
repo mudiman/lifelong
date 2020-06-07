@@ -1,0 +1,58 @@
+.footer {
+  background-color: $theme-main-color;
+  color: $white;
+  padding: 10px;
+  a {
+    color: $white;
+  }
+  &__top {
+    padding-top: 15px;
+    .logo {
+      z-index: 1050;
+      position: relative;
+
+      img {
+        width: 7.2rem;
+        height: 7.2rem;
+        object-fit: cover;
+        @include media-breakpoint-up(md) {
+          margin-bottom: -70px;
+        }
+        @include media-breakpoint-down(xs) {
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .university {
+      margin-left: -2.5rem;
+      @include media-breakpoint-down(md) {
+        margin-left: 0px;
+      }
+    }
+  }
+  &__middle {
+    &__third {
+      p {
+        width: 33%;
+      }
+    }
+  }
+  &__bottom {
+    margin-top: 15px;
+    text-align: center;
+    p {
+      font-size: 14px;
+      text-align: left;
+    }
+  }
+  .social-icons {
+    font-size: 27px;
+    @include media-breakpoint-down(md) {
+      padding: 0px;
+    }
+    @include media-breakpoint-down(sm) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+}
