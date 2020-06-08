@@ -30,34 +30,52 @@ body {
 
 
 .message_board {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background: linear-gradient(90deg, #FAFAFA 50%, #FFFFFF 50%);
-
+  padding-top: 85px;
   @include media-breakpoint-up(md) {
-    max-width: fit-content;
+
   }
   &__row {
 
   }
   &__image {
+    @include media-breakpoint-up(md) {
+      text-align: right;
+    }
+    @include media-breakpoint-down(sm) {
+      text-align: center;
+    }
     img {
+      clip-path: circle(50% at 50% 50%);
+      -webkit-clip-path: circle(50% at 50% 50%);
       @include media-breakpoint-down(xs) {
-        width: 190px;
-        height: 190px;
+        width: 227px;
+        height: 227px;
         object-fit: cover;
       }
     }
     @include media-breakpoint-down(xs) {
-      padding-bottom: 20px;
-      border-bottom: 1px solid #8497B0;
-      margin-bottom: 20px;
+      padding-bottom: 15px;
     }
   }
-  &__msg {
+  &__msg, &__row {
+    @include media-breakpoint-down(xs) {
+      padding-left: 23px;
+      padding-right: 23px;
+    }
+    .message_board_title {
+      font-size:18px;
+      letter-spacing:0em;
+      color: #8B0000;
+    }
+    .message_board_degree {
+      font-size:22px;
+      letter-spacing:0em;
+      color: #8B0000;
+    }
     .message_board_name {
-      color: $orange;
-      font-weight: bold;
+      color: black;
+      font-size:26px;
+      letter-spacing:0.08em;
     }
     &__desc {
       font-family: open sans,sans-serif;
@@ -65,6 +83,10 @@ body {
       font-size: 22px;
       padding-top: 10px;
       padding-bottom: 20px;
+      color: #4A596F;
+    }
+    .read-more {
+      color: #8B0000;
     }
   }
 }

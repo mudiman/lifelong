@@ -1,60 +1,99 @@
 .navbar {
   padding: 0px;
   color: $white;
+  background-color: $theme-main-color;
+  &__contact {
+    width: 93vw;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1px;
+    height: 25px;
+    background-color: #320F14;
+    @include media-breakpoint-down(xs) {
+      width: 100vw;
+    }
+    .container {
+      justify-content: flex-end;
+      font-size: 13px;
+    }
+    a:first-of-type {
+      margin-right: 20px;
+    }
+  }
+  .navbar__menu {
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    @include media-breakpoint-down(xs) {
+      margin-top: 6px;
+    }
+    .navbar-icon {
+
+    }
+
+    .navbar-icon-close {
+      display: none;
+    }
+  }
   &__primary {
     width: 100%;
-    height: 80px;
+    height: 70px;
     background-color: $theme-main-color;
     @include media-breakpoint-down(xs) {
-      padding-left: 10px;
       height: 76px;
     }
+
     .navbar__primary_container {
-      flex-direction: column;
-      padding-top: 20px;
-      .navbar-icon {
-        width: 54px;
-        height: 66px;
-        margin-top: -1rem;
-        margin-left: -1.2rem;
-      }
+      flex-direction: row;
+      width: 100%;
+      align-self: center;
     }
     .navbar-brand {
+      margin-right: 0px;
     }
     .logo {
-      z-index: 1050;
+      z-index: 2;
       position: relative;
+
       img {
-        width: 8.5rem;
-        height: 8.5rem;
+        width: 9.38rem;
+        height: 9.38rem;
         object-fit: cover;
         margin-bottom: 15px;
+        shape-outside:circle();
+        float: left;
+        margin-right: 31px;
+        margin-top: -21px;
         @include media-breakpoint-down(xs) {
-          width: 90px;
-          height: 90px;
-          margin-top: 10px;
+          width: 115px;
+          height: 115px;
+          margin-left: -10px;
+          margin-right: 19px;
+          margin-top: -21px;
         }
       }
     }
     .navbar-title {
-      display: flex;
-      align-items: center;
+      font-size:14px;
+      margin-bottom: 0;
       @include media-breakpoint-down(xs) {
         margin: auto;
       }
     }
   }
+  &__menu {
+    margin-left: auto;
+  }
   &__secondary {
     width: 100%;
-    height: 50px;
-    background-color: rgba(0, 0, 0, .5);
+    height: 44px;
+    background-color: rgba(156, 38, 38, .8);
     position: absolute;
-    top: 80px;
+    top: 96px;
     z-index: 1;
-    left: 50%;
-    transform: translateX(-50%);
+
     @include media-breakpoint-down(xs) {
-      top: 75px;
+      //top: 75px;
       height: 35px;
       justify-content: flex-end !important;
       padding-right: 10px;
@@ -78,51 +117,71 @@
 
 .navbars-menu {
   display: none;
-  position: fixed;
-  border: 15px solid $blue-gray;
-  left: 166px;
   z-index: 1060;
-  top: 35px;
-  background-color: $gray-100;
 
-  .contact-link {
-    a {
-      color: $orange;
+  height: 100vh;
+  margin-top: 75px;
+  .container {
+    @include media-breakpoint-up(md) {
+      display: flex !important;
     }
   }
-
-  @include media-breakpoint-down(md) {
-    left: 0px;
-    position: relative;
+  .navbar-mobile {
+    position: absolute;
+    width: 100%;
     top: 0px;
-    flex: 0 0 100%;
-    max-width: 100%;
+    background-color: rgb(203, 208, 214,0.9);
+    z-index: 2;
+    height: 100%;
+    text-align: center;
+    .navbar-nav {
+      transform: translateY(50%);
+      li {
+        line-height: 56px;
+        a {
+          color: #8B0000;
+          &.active {
+            color: black;
+          }
+        }
+      }
+    }
+    .dropdown-menu {
+      background-color: rgb(203, 208, 214);
+    }
+    .dropdown-toggle::before {
+      display: inline-block;
+      margin-left: 0.255em;
+      vertical-align: 0.255em;
+      content: "\f078";
+      font-family: 'Font Awesome 5 Free';
+      position: absolute;
+      left: 10px;
+      top: 15%;
+      color: black;
+    }
+    .dropdown-toggle.open::before {
+      content: "\f077";
+    }
+    .dropdown-toggle::after {
+      display: none;
+    }
+    .dropdown-menu {
+      width: 100%;
+      border: none;
+      text-align: center;
+    }
   }
   a {
     color: $black;
+    font-size: 14px;
+    &:hover {
+      color: $theme-main-color;
+      text-decoration: unset;
+    }
   }
-  &__admission {
-    padding-right: 0px;
-    padding-left: 0px;
-    p {
-      flex-grow: 1;
-      margin: auto;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      width: 100%;
-      a {
-        width: 100%;
-      }
-    }
-    p:nth-of-type(1) {
-      background-color: $orange;
-    }
-    p:nth-of-type(2) {
-      background-color: darkblue;
-    }
-    p:nth-of-type(3) {
-      background-color: $green;
-    }
+  .prime {
+    margin-bottom: 10px;
+    font-weight: bold;
   }
 }

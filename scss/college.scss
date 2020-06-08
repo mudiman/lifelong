@@ -1,5 +1,6 @@
 .college {
   color: $white;
+  background-color: #B6BFC8;
   .college_container {
     @include media-breakpoint-up(sm) {
       max-width: 100%;
@@ -7,65 +8,86 @@
     }
   }
   .college_type {
+    padding-left: 23px;
+    padding-right: 23px;
     @include media-breakpoint-down(md) {
       padding-top: 0rem;
     }
     @include media-breakpoint-down(xs) {
-      padding-top: 7rem;
+
     }
     .college_message {
-      padding-top: 30px;
-      padding-bottom: 30px;
-      padding-left: 4rem;
+      color: #4B121B;
+      font-size:14px;
+      letter-spacing:0em;
+      min-height: 100px;
+
       @include media-breakpoint-down(lg) {
         padding-left: 0rem;
       }
       @include media-breakpoint-down(md) {
         padding-right: 0px;
+        min-height: 0px;
       }
     }
     .college_name {
-      padding-top: 30px;
-      padding-bottom: 25px;
-      padding-left: 4rem;
+      color: #8B0000;
+      padding-top: 25px;
+
       @include media-breakpoint-down(lg) {
         padding-left: 0rem;
       }
       .college_title {
         margin-bottom: -4px;
         line-height: 2.5rem;
+        font-size:20px;
+        @include media-breakpoint-down(xs) {
+          font-size:15px;
+          margin-bottom: -9px;
+        }
       }
       .college_field {
+        font-size:26px;
+        @include media-breakpoint-down(lg) {
+          font-size:20px;
+          min-height: 62px;
+        }
+        @include media-breakpoint-down(sm) {
+          font-size:20px;
+          min-height: 0px;
+        }
+      }
+    }
+    .college_button {
+      height: 42px;
+      width: 160px;
+      background-color: rgba(75, 18, 27, 1);
+      color: white;
+      border-radius: 0px;
+      margin-bottom: 30px;
+      @include media-breakpoint-down(xs) {
+        margin-bottom: 36px;
+      }
+      &:hover {
+        background-color: #810304;
       }
     }
 
+
   }
   &__art {
-    //background-color: $nav-one-color;
-    background-image: url("../images/nav-one.png");
+    background-color: #CBD0D6;
     .college_name {
-      background-color: $nav-one-sub-color;
-      background: linear-gradient(180deg,
-              $nav-one-sub-color 90%,
-              #CC302E 10%);
     }
   }
   &__bussiness {
-    //background-color: $nav-two-color;
-    background-image: url("../images/nav-two.png");
+    background-color: #CBD0D6;
     .college_name {
-      background: linear-gradient(180deg,
-              $nav-two-sub-color 90%,
-              #7AB055 10%);
     }
   }
   &__engineering {
-    //background-color: $nav-three-color;
-    background-image: url("../images/nav-three.png");
+    background-color: #B6BFC8;
     .college_name {
-      background: linear-gradient(180deg,
-              $nav-three-sub-color 90%,
-              #637286 10%);
     }
   }
 }

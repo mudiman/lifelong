@@ -2,18 +2,20 @@
   background-color: $theme-main-color;
   color: $white;
   padding: 10px;
+  padding-bottom: 0px;
   a {
     color: $white;
   }
-  &__top {
+  &__middle {
     padding-top: 15px;
+    margin-bottom: 35px;
     .logo {
       z-index: 1050;
       position: relative;
 
       img {
-        width: 7.2rem;
-        height: 7.2rem;
+        width: 9rem;
+        height: 9rem;
         object-fit: cover;
         @include media-breakpoint-up(md) {
           margin-bottom: -70px;
@@ -24,25 +26,48 @@
       }
     }
     .university {
-      margin-left: -2.5rem;
+      margin-bottom:20px;
       @include media-breakpoint-down(md) {
         margin-left: 0px;
+        h5{
+          font-size: 18px;
+          font-weight: bold;
+        }
       }
     }
-  }
-  &__middle {
+    .list-unstyled {
+      font-size: 14px;
+    }
     &__third {
+
       p {
         width: 33%;
       }
     }
+    .footer__email {
+      margin-top: 20px;
+    }
   }
   &__bottom {
+    background-color: #320F14;
     margin-top: 15px;
     text-align: center;
+    height: 50.4px;
+    @include media-breakpoint-down(xs) {
+      height: 72px;
+    }
     p {
       font-size: 14px;
       text-align: left;
+      padding-top: 13px;
+      margin-bottom: 0rem;
+      @include media-breakpoint-down(xs) {
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        font-size: 12px;
+      }
     }
   }
   .social-icons {

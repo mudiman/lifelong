@@ -1,64 +1,99 @@
 .apply_now {
-  background-color: $apply-now-one-color;
-  color: $white;
+  background-color: #CBD0D6;
+  color: #8B0000;
   @include media-breakpoint-down(xs) {
-    padding-top: 40px;
+    padding-top: 20px;
   }
   &__container {
     @include media-breakpoint-down(xs) {
       margin: 0px;
-      margin-bottom: -38px;
+
     }
     &__img {
-      @include media-breakpoint-only(sm) {
+      padding-right: 0;
+      margin-right: -43px;
+
+      @include media-breakpoint-down(xs) {
+        padding-left: 0;
         text-align: center;
       }
-      @include media-breakpoint-down(xs) {
-        position: relative;
-        top: -38px;
-        left: -31px;
-      }
       img {
+        margin-bottom: 4px;
+        margin-top: 5px;
         @include media-breakpoint-down(xs) {
-          width: 170px;
-          height: 170px;
+          width: 240px;
+          height: 198px;
           object-fit: cover;
+          margin-bottom: 0px;
         }
       }
     }
 
     &__msg {
-      .you {
-        margin-top:  9px;
-      }
-      @include media-breakpoint-down(xs) {
+      padding-left: 0;
+      @include media-breakpoint-down(sm) {
         order: -1;
       }
       &__question {
-        margin-bottom: 15px;
-        .you {
-          @include media-breakpoint-up(md) {
-            font-size: 2.8rem;
+        h5 {
+          font-size: 40px;
+          margin-bottom: -10px;
+          @include media-breakpoint-down(xs) {
+            margin-bottom: -1px;
+            letter-spacing: 1.8px;
+            font-size: 24px;
+          }
+          &:last-of-type {
+            margin-bottom: 10px;
           }
         }
-        &__pre {
-          @include media-breakpoint-up(md) {
-            font-size: 2rem;
-          }
+        .ready {
+          font-weight: 700;
+          color: #4B121B;
+
+        }
+        .action-word {
+          font-weight: bold;
+        }
+
+        &__post, &__final {
+          margin-left: 147px;
         }
         &__post {
-          @include media-breakpoint-up(md) {
-            font-size: 2rem;
+          @include media-breakpoint-down(xs) {
+            margin-left: 64px;
+          }
+        }
+        &__final {
+          @include media-breakpoint-down(xs) {
+            margin-left: 33px;
           }
         }
       }
 
       &__button {
-        @include media-breakpoint-down(xs) {
-          text-align: right !important;
+        margin-left: 147px;
+        @include media-breakpoint-down(sm) {
+          text-align: center;
+          margin-left: 0;
+          width: 100%;
+          margin-bottom: 20px;
         }
         button {
-          padding: .5rem 5rem;
+          height: 42px;
+          width: 160px;
+          background-color: rgba(75, 18, 27, 1);
+          color: white;
+          border-radius: 0px;
+          @include media-breakpoint-down(sm) {
+            margin-bottom: 36px;
+            width: 200px;
+          }
+          &:hover {
+            background-color: #810304;
+            color:white;
+          }
+
           @include media-breakpoint-down(md) {
             margin-bottom: 10px;
           }
