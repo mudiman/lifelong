@@ -17101,4 +17101,56 @@ body {
   }
 }
 
+/* IUK Campus page */
+
+.iuk-campus .slide {
+  position: relative;
+}
+
+.iuk-campus .slide img {
+  width: 100%;
+  height: 407px;
+  object-fit: cover;
+}
+
+.image_bar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.image_bar .row {
+  height: 100%;
+}
+.image_bar .image {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.image_bar .image img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 575.98px) {
+  .image_bar .image {
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .image_bar .image {
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .image_bar .image {
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+}
+
+/* IUK Campus page end */
+
 /*# sourceMappingURL=main.css.map */
