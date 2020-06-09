@@ -12,31 +12,37 @@
     &__img {
       padding-right: 0;
       margin-right: -43px;
-
+      @include media-breakpoint-down(md) {
+        margin-right: 0px;
+        text-align: center;
+      }
       @include media-breakpoint-down(xs) {
         padding-left: 0;
-        text-align: center;
+
       }
       img {
         margin-bottom: 4px;
         margin-top: 5px;
+        @include media-breakpoint-down(md) {
+          margin-bottom: 0px;
+          margin-left: -48px;
+        }
         @include media-breakpoint-down(xs) {
           width: 240px;
           height: 198px;
           object-fit: cover;
-          margin-bottom: 0px;
         }
       }
     }
 
     &__msg {
       padding-left: 0;
-      @include media-breakpoint-down(sm) {
+      @include media-breakpoint-down(md) {
         order: -1;
       }
       &__question {
         h5 {
-          font-size: 40px;
+          font-size: 2.5rem;
           margin-bottom: -10px;
           @include media-breakpoint-down(xs) {
             margin-bottom: -1px;
@@ -73,7 +79,7 @@
 
       &__button {
         margin-left: 147px;
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(md) {
           text-align: center;
           margin-left: 0;
           width: 100%;
@@ -185,6 +191,78 @@
         @include media-breakpoint-down(xs) {
           object-fit: contain;
         }
+      }
+    }
+  }
+}
+
+.apply_now_2 {
+  background-color: #CBD0D6;
+  color: #8B0000;
+  padding-top:5px;
+  padding-bottom:5px;
+  .apply_now_2__container {
+    &__good {
+      font-weight: bold;
+      @include media-breakpoint-down(md) {
+        margin-bottom: 10px;
+      }
+    }
+    &__skills {
+      &::before {
+        content: '\f100';
+        display: inline-block;
+        margin-left: 0.255em;
+        vertical-align: 0.255em;
+        font-family: 'Font Awesome 5 Free';
+        position: absolute;
+        top: 30%;
+        left: -10px;
+        color: #8B0000;
+        @include media-breakpoint-down(sm) {
+          left: 0px;
+        }
+      }
+      &::after {
+        content: '\f101';
+        display: inline-block;
+        margin-left: 0.255em;
+        vertical-align: 0.255em;
+        font-family: 'Font Awesome 5 Free';
+        position: absolute;
+        top: 30%;
+        right: -10px;
+        color: #8B0000;
+        @include media-breakpoint-down(sm) {
+          right: 0px;
+        }
+      }
+      @include media-breakpoint-down(md) {
+        margin-bottom: 10px;
+      }
+    }
+    &__button {
+
+      @include media-breakpoint-down(md) {
+        text-align: center;
+        margin-left: 0;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      button {
+        height: 42px;
+        width: 160px;
+        background-color: rgba(75, 18, 27, 1);
+        color: white;
+        border-radius: 0px;
+        @include media-breakpoint-down(sm) {
+          width: 200px;
+        }
+        &:hover {
+          background-color: #810304;
+          color:white;
+        }
+
       }
     }
   }

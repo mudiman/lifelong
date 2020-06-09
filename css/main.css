@@ -16278,7 +16278,7 @@ readers do not read off random characters that represent icons */
   text-align: center;
 }
 .navbars-menu .navbar-mobile .navbar-nav {
-  transform: translateY(50%);
+  transform: translateY(20%);
 }
 .navbars-menu .navbar-mobile .navbar-nav li {
   line-height: 56px;
@@ -16658,34 +16658,44 @@ a {
   padding-right: 0;
   margin-right: -43px;
 }
+@media (max-width: 991.98px) {
+  .apply_now__container__img {
+    margin-right: 0px;
+    text-align: center;
+  }
+}
 @media (max-width: 575.98px) {
   .apply_now__container__img {
     padding-left: 0;
-    text-align: center;
   }
 }
 .apply_now__container__img img {
   margin-bottom: 4px;
   margin-top: 5px;
 }
+@media (max-width: 991.98px) {
+  .apply_now__container__img img {
+    margin-bottom: 0px;
+    margin-left: -48px;
+  }
+}
 @media (max-width: 575.98px) {
   .apply_now__container__img img {
     width: 240px;
     height: 198px;
     object-fit: cover;
-    margin-bottom: 0px;
   }
 }
 .apply_now__container__msg {
   padding-left: 0;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .apply_now__container__msg {
     order: -1;
   }
 }
 .apply_now__container__msg__question h5 {
-  font-size: 40px;
+  font-size: 2.5rem;
   margin-bottom: -10px;
 }
 @media (max-width: 575.98px) {
@@ -16721,7 +16731,7 @@ a {
 .apply_now__container__msg__button {
   margin-left: 147px;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .apply_now__container__msg__button {
     text-align: center;
     margin-left: 0;
@@ -16844,6 +16854,82 @@ a {
   .apply_now_1__container__img img {
     object-fit: contain;
   }
+}
+
+.apply_now_2 {
+  background-color: #CBD0D6;
+  color: #8B0000;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.apply_now_2 .apply_now_2__container__good {
+  font-weight: bold;
+}
+@media (max-width: 991.98px) {
+  .apply_now_2 .apply_now_2__container__good {
+    margin-bottom: 10px;
+  }
+}
+.apply_now_2 .apply_now_2__container__skills::before {
+  content: "";
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  top: 30%;
+  left: -10px;
+  color: #8B0000;
+}
+@media (max-width: 767.98px) {
+  .apply_now_2 .apply_now_2__container__skills::before {
+    left: 0px;
+  }
+}
+.apply_now_2 .apply_now_2__container__skills::after {
+  content: "";
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  top: 30%;
+  right: -10px;
+  color: #8B0000;
+}
+@media (max-width: 767.98px) {
+  .apply_now_2 .apply_now_2__container__skills::after {
+    right: 0px;
+  }
+}
+@media (max-width: 991.98px) {
+  .apply_now_2 .apply_now_2__container__skills {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 991.98px) {
+  .apply_now_2 .apply_now_2__container__button {
+    text-align: center;
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+.apply_now_2 .apply_now_2__container__button button {
+  height: 42px;
+  width: 160px;
+  background-color: #4b121b;
+  color: white;
+  border-radius: 0px;
+}
+@media (max-width: 767.98px) {
+  .apply_now_2 .apply_now_2__container__button button {
+    width: 200px;
+  }
+}
+.apply_now_2 .apply_now_2__container__button button:hover {
+  background-color: #810304;
+  color: white;
 }
 
 .newsletter {
@@ -17280,57 +17366,5 @@ body {
     padding: 15px;
   }
 }
-
-/* IUK Campus page */
-
-.iuk-campus .slide {
-  position: relative;
-}
-
-.iuk-campus .slide img {
-  width: 100%;
-  height: 407px;
-  object-fit: cover;
-}
-
-.image_bar {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.image_bar .row {
-  height: 100%;
-}
-.image_bar .image {
-  padding-left: 3px;
-  padding-right: 3px;
-}
-.image_bar .image img {
-  width: 100%;
-  height: 100%;
-}
-
-@media (max-width: 575.98px) {
-  .image_bar .image {
-    padding-top: 3px;
-    padding-bottom: 3px;
-  }
-}
-
-@media (max-width: 1199.98px) {
-  .image_bar .image {
-    padding-top: 3px;
-    padding-bottom: 3px;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .image_bar .image {
-    padding-top: 3px;
-    padding-bottom: 3px;
-  }
-}
-
-/* IUK Campus page end */
 
 /*# sourceMappingURL=main.css.map */
