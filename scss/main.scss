@@ -28,6 +28,13 @@ body {
   font-family: $font-main;
 }
 
+.container-xl, .container-lg, .container-md, .container-sm, .container {
+  @media (min-width: 1200px) {
+
+    max-width: 1030px;
+
+  }
+}
 
 .message_board {
   padding-top: 85px;
