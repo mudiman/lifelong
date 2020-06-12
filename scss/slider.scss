@@ -23,5 +23,29 @@
         font: normal normal normal 14px/1.4em futura-lt-w01-light,sans-serif;
       }
     }
+    &__button_container {
+      position: absolute;
+      right: 10%;
+      top: 50%;
+      button {
+        display: none;
+        color: white;
+        width: 320px;
+        height: 70px;
+        background-color: rgba(75, 18, 27, 1);
+        @include media-breakpoint-down(xs) {
+          width: 290px;
+        }
+        &:hover {
+          background-color: #810304;
+          color:white;
+        }
+      }
+    }
+    &:hover {
+      button {
+        display: block;
+      }
+    }
   }
 }

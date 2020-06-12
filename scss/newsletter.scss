@@ -1,10 +1,12 @@
 .newsletter {
-
-  background-color: rgba(156, 38, 38);
+  background-color: rgba(156, 38, 38, 0.8);
   padding: 20px 0;
   color: $white;
   display: flex;
   justify-content: center;
+  position: absolute;
+  width: 100%;
+  transform: translateY(-100%);
   @include media-breakpoint-down(xs) {
     padding: 30px 0;
     display: block;
