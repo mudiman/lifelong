@@ -824,6 +824,10 @@ pre code {
   margin-left: 91.6666666667%;
 }
 
+.padding-top-40 {
+  padding-top: 40px;
+}
+
 @media (min-width: 576px) {
   .col-sm {
     flex-basis: 0;
@@ -17976,5 +17980,38 @@ textarea:focus, input:focus{
 }
 
 /* Admissions ends */
+
+/* College of business start */
+
+.college-of-business .slide {
+  position: relative;
+}
+
+.college-of-business .slide img {
+  width: 100%;
+  height: 407px;
+  object-fit: cover;
+}
+
+.degree_list .row {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.degree_list .degree__program_light {
+  background-color: #cbd0d6;
+  height: 100px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.degree_list .degree__program_dark {
+  background-color: #b6bfc8;
+  height: 100px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+/* College of business ends */
 
 /*# sourceMappingURL=main.css.map */
