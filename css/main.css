@@ -17814,4 +17814,167 @@ body {
 
 /* About us ends */
 
+/* Admissions start */
+
+.admissions .slide {
+    position: relative;
+}
+
+.admissions .slide img {
+    width: 100%;
+    height: 407px;
+    object-fit: cover;
+}
+
+.admissions-detail {
+    background-color: #324158;
+    color: white;
+    padding-top: 40px;
+}
+
+.admissions-detail .heading{
+    justify-content: center;
+}
+
+.admissions-detail .heading h2{
+    letter-spacing:0.05em;
+    font: normal normal normal 28px/1.4em proxima-n-w01-reg, sans-serif;
+    font-size:30px;
+    padding-bottom: 20px;
+}
+
+.admissions-detail .line {
+    position: relative;
+    margin: 0px 0px 16px calc((100% - 980px) * 0.5);
+    left: 469px;
+    box-sizing: border-box;
+    border-top: 3px solid rgba(255, 255, 255, 1);
+    width: 40px;
+}
+
+.admissions-detail .text {
+    margin-top: 20px;
+    padding-bottom: 30px;
+    width: 549px;
+    position: relative;
+    margin: 0px 0px 31px calc((100% - 980px) * 0.5);
+    left: 216px;
+    font-size:20px;
+    text-align: center;
+}
+
+.field {
+    width: auto;
+    height: auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.field input, textarea {
+    width: 50%;
+    height: 50%;
+    border-radius: 0;
+    font: normal normal normal 16px/1.4em 'open sans',sans-serif;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-width: 0 0 1px 0;
+    background-color: rgba(255, 255, 255, 0.43);
+    box-sizing: border-box !important;
+    color: #8B0000;
+    border-style: solid;
+    border-color: rgba(139, 0, 0, 1);
+    font-size: 16px;
+    padding-bottom: 17px;
+    margin: 0;
+    max-width: 100%;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    text-overflow: ellipsis;
+}
+
+.field button {
+    width: 140px;
+    height: 45px;
+    background-color: rgba(75, 18, 27, 1);
+    border: solid rgba(153, 153, 151, 1) 0px;
+    cursor: pointer !important;
+    color: white;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #8B0000;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #8B0000;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #8B0000;
+}
+
+@media (max-width: 575.98px) {
+    .admissions-detail .heading h2 {
+        letter-spacing:0.02em;
+        font: normal normal normal 20px/1.4em proxima-n-w01-reg, sans-serif;
+        font-size:15px;
+        text-align: center;
+    }
+
+    .admissions-detail .text {
+        margin-top: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+        /*width: 449px;*/
+        width: 431px;
+        position: relative;
+        margin: 0px 0px 31px calc((100% - 980px) * 0.5);
+        /*left: 265px;*/
+        left: 274px;
+        font-size:20px;
+        text-align: center;
+    }
+
+    .field input, textarea {
+        width: 70%;
+        height: 70%;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .admissions-detail .heading h2 {
+        letter-spacing:0.02em;
+        font: normal normal normal 20px/1.4em proxima-n-w01-reg, sans-serif;
+        font-size:20px;
+        text-align: center;
+    }
+
+    .field input, textarea {
+        width: 70%;
+        height: 70%;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .admissions-detail .heading h2 {
+        letter-spacing:0.02em;
+        font: normal normal normal 20px/1.4em proxima-n-w01-reg, sans-serif;
+        font-size:17px;
+        text-align: center;
+    }
+
+    .field input, textarea {
+        width: 70%;
+        height: 70%;
+    }
+}
+
+/* Admissions ends */
+
 /*# sourceMappingURL=main.css.map */
