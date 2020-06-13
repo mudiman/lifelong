@@ -16384,7 +16384,7 @@ readers do not read off random characters that represent icons */
 }
 @media (max-width: 575.98px) {
   .slider .slide__message {
-    height: 70px;
+    height: 54px;
   }
 }
 .slider .slide__message p {
@@ -17278,6 +17278,78 @@ body.president .office__item:nth-of-type(3) {
 }
 body.president .office__description {
   padding-top: 20px;
+}
+
+html:lang(ar) body {
+  text-align: right;
+}
+html:lang(ar) body .navbar__contact .container {
+  justify-content: unset;
+}
+html:lang(ar) body .navbar__contact .navbar__menu {
+  margin-left: unset;
+  margin-right: auto;
+}
+html:lang(ar) body .navbar__primary .navbar-brand .logo {
+  display: flex;
+}
+@media (max-width: 767.98px) {
+  html:lang(ar) body .navbar__primary .navbar-brand .logo img {
+    margin-left: unset;
+    margin-right: unset;
+  }
+}
+html:lang(ar) body .navbar__primary .navbar-brand .logo .navbar-title {
+  order: -1;
+}
+@media (max-width: 767.98px) {
+  html:lang(ar) body .navbar__primary .navbar-brand .logo .navbar-title {
+    margin: unset;
+    padding-top: unset;
+  }
+}
+html:lang(ar) body .navbar__primary .navbar__primary_container {
+  order: -1;
+}
+html:lang(ar) body .navbar__primary .navbar__primary_container .navbar__menu {
+  margin-left: unset;
+}
+html:lang(ar) body .navbars-menu .navbar-desktop .col-md-4 {
+  order: 1;
+}
+html:lang(ar) body .slider .slide__button_container {
+  right: unset;
+  left: 10%;
+}
+@media (min-width: 992px) {
+  html:lang(ar) body .message_board .message_board__msg {
+    order: -1;
+  }
+}
+html:lang(ar) body .compass-tour .compass-tour__msg__img {
+  order: -1;
+}
+html:lang(ar) body .highlights .game__desc .btn {
+  position: unset;
+}
+html:lang(ar) body .newsletter h4 {
+  order: 1;
+}
+@media (min-width: 992px) {
+  html:lang(ar) body .footer .footer__middle .logo {
+    order: 3;
+  }
+}
+@media (min-width: 992px) {
+  html:lang(ar) body .footer .footer__middle .social-icons {
+    order: -1;
+  }
+}
+@media (min-width: 992px) {
+  html:lang(ar) body .footer .footer__middle .social-icons.offset-4 {
+    margin-left: unset;
+    margin-right: 25%;
+  }
 }
 
 html, body {

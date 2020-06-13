@@ -1,0 +1,100 @@
+html:lang(ar) {
+  body {
+    text-align: right;
+    .navbar__contact {
+      .container {
+        justify-content: unset;
+      }
+      .navbar__menu {
+        margin-left:unset;
+        margin-right: auto;
+      }
+    }
+    .navbar__primary {
+      .navbar-brand {
+        .logo {
+          display: flex;
+          img {
+            @include media-breakpoint-down(sm) {
+              margin-left: unset;
+              margin-right: unset;
+            }
+          }
+          .navbar-title {
+            order: -1;
+            @include media-breakpoint-down(sm) {
+              margin:unset;
+              padding-top: unset;
+            }
+          }
+        }
+      }
+      .navbar__primary_container {
+        order: -1;
+        .navbar__menu {
+          margin-left: unset;
+        }
+      }
+    }
+    .navbars-menu {
+      .navbar-desktop {
+        .col-md-4 {
+          order: 1;
+        }
+      }
+    }
+    .slider {
+      .slide__button_container {
+        right: unset;
+        left: 10%;
+      }
+    }
+    .message_board {
+      .message_board__msg {
+        @include media-breakpoint-up(lg) {
+          order: -1;
+        }
+      }
+    }
+    .compass-tour {
+      .compass-tour__msg__img{
+        order: -1;
+      }
+    }
+
+    .highlights {
+      .game__desc {
+        .btn {
+          position: unset;
+        }
+      }
+    }
+
+    .newsletter {
+      h4 {
+        order: 1;
+      }
+    }
+
+    .footer {
+      .footer__middle {
+        .logo {
+          @include media-breakpoint-up(lg) {
+            order: 3;
+          }
+        }
+        .social-icons {
+          @include media-breakpoint-up(lg) {
+            order: -1;
+          }
+          &.offset-4 {
+            @include media-breakpoint-up(lg) {
+              margin-left: unset;
+              margin-right: 25%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
