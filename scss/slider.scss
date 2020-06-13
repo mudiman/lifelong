@@ -33,6 +33,7 @@
         width: 320px;
         height: 70px;
         background-color: rgba(75, 18, 27, 1);
+        border-radius: 0px;
         @include media-breakpoint-down(xs) {
           width: 290px;
         }

@@ -1,7 +1,7 @@
 (function ($) {
     $('.navbar-icon').on('click', function () {
         $('#navbars-menu').toggle();
-        $('.navbar-icon-close').show();
+        $('.navbar-icon-close').css('display', 'inline-block');
         $('.navbar-icon').hide();
         disableScroll();
     });
