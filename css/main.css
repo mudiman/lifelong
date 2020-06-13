@@ -16293,7 +16293,7 @@ readers do not read off random characters that represent icons */
   height: 100vh;
   margin-top: 120px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .navbars-menu .container {
     display: flex !important;
   }
