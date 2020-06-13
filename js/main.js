@@ -24,7 +24,7 @@
             cssEase: 'linear',
             autoplay: true,
             autoplaySpeed: 2000,
-            adaptiveHeight: true
+            adaptiveHeight: false
         });
     });
     if (typeof universalParallax !== 'undefined') {

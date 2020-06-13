@@ -170,6 +170,9 @@
     }
     .dropdown-menu {
       background-color: rgb(203, 208, 214);
+      .dropdown-item {
+        padding: 0px;
+      }
     }
     .dropdown-toggle::before {
       display: inline-block;

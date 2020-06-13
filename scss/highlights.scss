@@ -57,9 +57,10 @@
       height: 100%;
     }
     &__desc {
-      padding: 10px;
       background-color: #385723;
-      padding-bottom: 0.5px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 2px;
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         height: 118px;
       }
