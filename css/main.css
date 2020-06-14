@@ -17570,13 +17570,11 @@ body.president .office__description {
     margin-top: 20px;
     padding-left: 50px;
     padding-right: 50px;
-    /*width: 449px;*/
     width: 431px;
     position: relative;
     margin: 0px 0px 31px calc((100% - 980px) * 0.5);
-    /*left: 265px;*/
     left: 274px;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
   }
 }
