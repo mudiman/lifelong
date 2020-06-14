@@ -17459,7 +17459,7 @@ body.president .office__description {
     position: relative;
     margin: 0px 0px 31px calc((100% - 980px) * 0.5);
     left: 265px;
-    font-size: 20px;
+    font-size: 14px;
     text-align: center;
   }
 
@@ -17494,7 +17494,7 @@ body.president .office__description {
   .general-req-detail .heading h2 {
     letter-spacing: 0.02em;
     font: normal normal normal 20px/1.4em proxima-n-w01-reg, sans-serif;
-    font-size: 23px;
+    font-size: 19px;
   }
 }
 .contact-us .slide {
@@ -17696,7 +17696,7 @@ body.president .office__description {
     position: relative;
     margin: 0px 0px 31px calc((100% - 980px) * 0.5);
     left: 274px;
-    font-size: 18px;
+    font-size: 14px;
     letter-spacing: 0.05em;
     text-align: center;
   }
