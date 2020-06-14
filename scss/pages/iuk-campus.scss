@@ -15,7 +15,10 @@
 
 .image_bar .row {
   height: 100%;
+  margin-left: 30px;
+  margin-right: 30px;
 }
+
 .image_bar .image {
   padding-left: 3px;
   padding-right: 3px;
@@ -26,6 +29,11 @@
 }
 
 @media (max-width: 575.98px) {
+  .image_bar .row {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .image_bar .image {
     padding-top: 3px;
     padding-bottom: 3px;
@@ -33,6 +41,11 @@
 }
 
 @media (max-width: 1199.98px) {
+  .image_bar .row {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .image_bar .image {
     padding-top: 3px;
     padding-bottom: 3px;
@@ -40,6 +53,12 @@
 }
 
 @media (max-width: 991.98px) {
+
+  .image_bar .row {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .image_bar .image {
     padding-top: 3px;
     padding-bottom: 3px;
