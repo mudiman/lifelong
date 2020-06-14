@@ -16308,7 +16308,7 @@ readers do not read off random characters that represent icons */
   text-align: center;
 }
 .navbars-menu .navbar-mobile .navbar-nav {
-  transform: translateY(20%);
+  margin-top: 40px;
 }
 .navbars-menu .navbar-mobile .navbar-nav li {
   line-height: 56px;
@@ -16333,10 +16333,9 @@ readers do not read off random characters that represent icons */
   font-family: "Font Awesome 5 Free";
   position: absolute;
   left: 10px;
-  top: 15%;
   color: black;
 }
-.navbars-menu .navbar-mobile .dropdown-toggle.open::before {
+.navbars-menu .navbar-mobile .dropdown-toggle[aria-expanded=true]::before {
   content: "";
 }
 .navbars-menu .navbar-mobile .dropdown-toggle::after {

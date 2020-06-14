@@ -157,7 +157,7 @@
     height: 100%;
     text-align: center;
     .navbar-nav {
-      transform: translateY(20%);
+      margin-top: 40px;
       li {
         line-height: 56px;
         a {
@@ -182,10 +182,10 @@
       font-family: 'Font Awesome 5 Free';
       position: absolute;
       left: 10px;
-      top: 15%;
+
       color: black;
     }
-    .dropdown-toggle.open::before {
+    .dropdown-toggle[aria-expanded="true"]::before {
       content: "\f077";
     }
     .dropdown-toggle::after {
