@@ -17952,19 +17952,20 @@ textarea:focus, input:focus {
 .admission-requirements-list .row {
   padding-left: 30px;
   padding-right: 30px;
+  margin-left: -7px;
 }
 
 .admission-requirements-list .admission-requirements__program_light {
   background-color: #cbd0d6;
   height: 200px;
-  text-align: center;
+  text-align: left;
   padding-top: 30px;
 }
 
 .admission-requirements-list .admission-requirements__program_dark {
   background-color: #b6bfc8;
   height: 200px;
-  text-align: center;
+  text-align: left;
   padding-top: 30px;
 }
 
