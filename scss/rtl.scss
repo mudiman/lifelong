@@ -3,7 +3,7 @@ html:lang(ar) {
     text-align: right;
     .navbar__contact {
       .container {
-        justify-content: unset;
+
       }
       .navbar__menu {
         margin-left:unset;
@@ -21,7 +21,7 @@ html:lang(ar) {
             }
           }
           .navbar-title {
-            order: -1;
+
             @include media-breakpoint-down(sm) {
               margin:unset;
               padding-top: unset;
@@ -30,49 +30,89 @@ html:lang(ar) {
         }
       }
       .navbar__primary_container {
-        order: -1;
+
         .navbar__menu {
           margin-left: unset;
+          margin-right: auto;
         }
       }
     }
     .navbars-menu {
       .navbar-desktop {
         .col-md-4 {
-          order: 1;
+
         }
       }
     }
+
     .slider {
+
       .slide__button_container {
         right: unset;
         left: 10%;
       }
     }
     .message_board {
-      .message_board__msg {
+      .message_board__image {
         @include media-breakpoint-up(lg) {
-          order: -1;
+          text-align: left;
         }
       }
     }
     .compass-tour {
-      .compass-tour__msg__img{
-        order: -1;
+      .compass-tour__msg {
+        &__cont {
+          margin-right:15px;
+        }
+
       }
     }
 
     .highlights {
+      .award-container {
+        @include media-breakpoint-up(lg) {
+          padding-right: 15px;
+        }
+        .host {
+          padding-right: 0;
+        }
+      }
       .game__desc {
         .btn {
           position: unset;
+        }
+      }
+      .second-highlights {
+        .game {
+          padding-right:0px;
+          padding-left:0px;
+          .row {
+            @include media-breakpoint-up(lg) {
+              margin-left: 15px;
+            }
+          }
+        }
+        .list-twitter {
+          ul {
+            padding-right: 10px;
+            li {
+              .col-9 {
+                padding-right: 0px;
+              }
+            }
+          }
+        }
+        .museum {
+          @include media-breakpoint-up(lg) {
+            padding-right: 15px;
+          }
         }
       }
     }
 
     .newsletter {
       h4 {
-        order: 1;
+
       }
     }
 
@@ -80,12 +120,15 @@ html:lang(ar) {
       .footer__middle {
         .logo {
           @include media-breakpoint-up(lg) {
-            order: 3;
+
           }
+        }
+        .list-unstyled {
+          padding-right: 0px;
         }
         .social-icons {
           @include media-breakpoint-up(lg) {
-            order: -1;
+
           }
           &.offset-4 {
             @include media-breakpoint-up(lg) {

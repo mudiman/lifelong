@@ -16,20 +16,26 @@
     });
     $(document).ready(function () {
         $('.slider').slick({
-            infinite: true,
-            speed: 300,
-            fade: true,
-            slidesToShow: 1,
-            arrow: false,
-            cssEase: 'linear',
             autoplay: true,
-            autoplaySpeed: 2000,
-            adaptiveHeight: false
+            autoplaySpeed: 3000,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false,
+            infinite: true,
+            cssEase: 'linear',
+            vertical:true,
+            arrows:false,
+            speed: 300,
         });
+
+        // setTimeout(function() {
+        //     $('[dir="rtl"] .slick-slide').css('float','unset');
+        // }, 1000);
     });
     if (typeof universalParallax !== 'undefined') {
         new universalParallax().init();
     }
+
 
 })(jQuery);
 

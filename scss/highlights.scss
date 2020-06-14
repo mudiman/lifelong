@@ -66,6 +66,10 @@
       }
       h5 {
         margin-bottom: 0px;
+        padding-top: 8px;
+        @include media-breakpoint-down(sm) {
+          padding-top: 4px;
+        }
       }
       a {
         color: $white;
@@ -119,6 +123,42 @@
   }
   .twitter {
     padding-left: 0px;
+    .list-twitter {
+      height: 100%;
+      width: 100%;
+      background-color: #BDD7EE;
+      display: flex;
+
+      ul {
+        font-size: 1.5rem;
+        padding-left: 0px;
+        align-self: center;
+        list-style: none;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        @include media-breakpoint-down(sm) {
+          font-size: 14px;
+        }
+        li {
+          .col-3 {
+            padding-right: 0;
+            img {
+              height: unset;
+              width: 60px;
+            }
+          }
+          .col-9 {
+            padding-left: 5px;
+          }
+          a {
+            color: black;
+          }
+          &:first-of-type {
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
     .award__desc {
       background-color: #02ACED;
       height: 60px;
