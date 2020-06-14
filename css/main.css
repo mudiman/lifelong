@@ -16511,6 +16511,12 @@ a {
 }
 .highlights .award__desc h5 {
   margin-bottom: 0px;
+  padding-top: 8px;
+}
+@media (max-width: 767.98px) {
+  .highlights .award__desc h5 {
+    padding-top: 4px;
+  }
 }
 .highlights .award__desc a {
   color: #fff;
@@ -16565,6 +16571,41 @@ a {
 }
 .highlights .twitter {
   padding-left: 0px;
+}
+.highlights .twitter .list-twitter {
+  height: 100%;
+  width: 100%;
+  background-color: #BDD7EE;
+  display: flex;
+}
+.highlights .twitter .list-twitter ul {
+  font-size: 1.5rem;
+  padding-left: 0px;
+  align-self: center;
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+@media (max-width: 767.98px) {
+  .highlights .twitter .list-twitter ul {
+    font-size: 14px;
+  }
+}
+.highlights .twitter .list-twitter ul li .col-3 {
+  padding-right: 0;
+}
+.highlights .twitter .list-twitter ul li .col-3 img {
+  height: unset;
+  width: 60px;
+}
+.highlights .twitter .list-twitter ul li .col-9 {
+  padding-left: 5px;
+}
+.highlights .twitter .list-twitter ul li a {
+  color: black;
+}
+.highlights .twitter .list-twitter ul li:first-of-type {
+  margin-bottom: 15px;
 }
 .highlights .twitter .award__desc {
   background-color: #02ACED;
@@ -17885,9 +17926,6 @@ textarea:focus, input:focus {
 html:lang(ar) body {
   text-align: right;
 }
-html:lang(ar) body .navbar__contact .container {
-  justify-content: unset;
-}
 html:lang(ar) body .navbar__contact .navbar__menu {
   margin-left: unset;
   margin-right: auto;
@@ -17901,51 +17939,61 @@ html:lang(ar) body .navbar__primary .navbar-brand .logo {
     margin-right: unset;
   }
 }
-html:lang(ar) body .navbar__primary .navbar-brand .logo .navbar-title {
-  order: -1;
-}
 @media (max-width: 767.98px) {
   html:lang(ar) body .navbar__primary .navbar-brand .logo .navbar-title {
     margin: unset;
     padding-top: unset;
   }
 }
-html:lang(ar) body .navbar__primary .navbar__primary_container {
-  order: -1;
-}
 html:lang(ar) body .navbar__primary .navbar__primary_container .navbar__menu {
   margin-left: unset;
-}
-html:lang(ar) body .navbars-menu .navbar-desktop .col-md-4 {
-  order: 1;
+  margin-right: auto;
 }
 html:lang(ar) body .slider .slide__button_container {
   right: unset;
   left: 10%;
 }
 @media (min-width: 992px) {
-  html:lang(ar) body .message_board .message_board__msg {
-    order: -1;
+  html:lang(ar) body .message_board .message_board__image {
+    text-align: left;
   }
 }
-html:lang(ar) body .compass-tour .compass-tour__msg__img {
-  order: -1;
+html:lang(ar) body .compass-tour .compass-tour__msg__cont {
+  margin-right: 15px;
+}
+@media (min-width: 992px) {
+  html:lang(ar) body .highlights .award-container {
+    padding-right: 15px;
+  }
+}
+html:lang(ar) body .highlights .award-container .host {
+  padding-right: 0;
 }
 html:lang(ar) body .highlights .game__desc .btn {
   position: unset;
 }
-html:lang(ar) body .newsletter h4 {
-  order: 1;
+html:lang(ar) body .highlights .second-highlights .game {
+  padding-right: 0px;
+  padding-left: 0px;
 }
 @media (min-width: 992px) {
-  html:lang(ar) body .footer .footer__middle .logo {
-    order: 3;
+  html:lang(ar) body .highlights .second-highlights .game .row {
+    margin-left: 15px;
   }
 }
+html:lang(ar) body .highlights .second-highlights .list-twitter ul {
+  padding-right: 10px;
+}
+html:lang(ar) body .highlights .second-highlights .list-twitter ul li .col-9 {
+  padding-right: 0px;
+}
 @media (min-width: 992px) {
-  html:lang(ar) body .footer .footer__middle .social-icons {
-    order: -1;
+  html:lang(ar) body .highlights .second-highlights .museum {
+    padding-right: 15px;
   }
+}
+html:lang(ar) body .footer .footer__middle .list-unstyled {
+  padding-right: 0px;
 }
 @media (min-width: 992px) {
   html:lang(ar) body .footer .footer__middle .social-icons.offset-4 {
