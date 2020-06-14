@@ -17280,6 +17280,606 @@ body.president .office__description {
   padding-top: 20px;
 }
 
+.iuk-campus .slide {
+  position: relative;
+}
+
+.iuk-campus .slide img {
+  width: 100%;
+  height: 407px;
+  object-fit: cover;
+}
+
+.image_bar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.image_bar .row {
+  height: 100%;
+}
+
+.image_bar .image {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.image_bar .image img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 575.98px) {
+  .image_bar .image {
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .image_bar .image {
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+}
+@media (max-width: 991.98px) {
+  .image_bar .image {
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+}
+.general-degree-reqs .slide {
+  position: relative;
+}
+
+.general-degree-reqs .slide img {
+  width: 100%;
+  height: 407px;
+  object-fit: cover;
+}
+
+.general-req-detail {
+  background-color: #324158;
+  color: white;
+  padding-top: 40px;
+}
+
+.general-req-detail .heading {
+  justify-content: center;
+}
+
+.general-req-detail .heading h2 {
+  letter-spacing: 0.05em;
+  font: normal normal normal 28px/1.4em proxima-n-w01-reg, sans-serif;
+  font-size: 36px;
+  padding-bottom: 20px;
+}
+
+.general-req-detail .line {
+  position: relative;
+  margin: 0px 0px 16px calc((100% - 980px) * 0.5);
+  left: 469px;
+  box-sizing: border-box;
+  border-top: 3px solid white;
+  width: 40px;
+}
+
+.general-req-detail .text {
+  margin-top: 20px;
+  padding-bottom: 30px;
+  width: 549px;
+  position: relative;
+  margin: 0px 0px 31px calc((100% - 980px) * 0.5);
+  left: 216px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.degree_req .heading {
+  justify-content: center;
+}
+
+.degree_req .heading h2 {
+  font-size: 38px;
+  padding-bottom: 20px;
+}
+
+.degree_req .heading .heading_1 {
+  font-weight: bold;
+  color: #4B121B;
+}
+
+.degree_req .heading .heading_2 {
+  color: #8B0000;
+}
+
+.degree_req .content {
+  width: 800px;
+  left: 170px;
+  position: relative;
+  font-family: open sans, sans-serif;
+  font-size: 20px;
+}
+
+@media (max-width: 575.98px) {
+  .general-req-detail .heading h2 {
+    letter-spacing: 0.02em;
+    font: normal normal normal 20px/1.4em proxima-n-w01-reg, sans-serif;
+    font-size: 23px;
+  }
+
+  .general-req-detail .text {
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 449px;
+    position: relative;
+    margin: 0px 0px 31px calc((100% - 980px) * 0.5);
+    left: 265px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .degree_req .heading h2 {
+    font-size: 23px;
+  }
+
+  .degree_req .content {
+    position: relative;
+    width: auto;
+    left: auto;
+    font-family: open sans, sans-serif;
+    font-size: 20px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .general-req-detail .heading h2 {
+    letter-spacing: 0.02em;
+    font: normal normal normal 20px/1.4em proxima-n-w01-reg, sans-serif;
+    font-size: 23px;
+  }
+
+  .degree_req .content {
+    position: relative;
+    width: auto;
+    left: auto;
+    font-family: open sans, sans-serif;
+    font-size: 20px;
+  }
+}
+@media (max-width: 991.98px) {
+  .general-req-detail .heading h2 {
+    letter-spacing: 0.02em;
+    font: normal normal normal 20px/1.4em proxima-n-w01-reg, sans-serif;
+    font-size: 23px;
+  }
+}
+.contact-us .slide {
+  position: relative;
+}
+
+.contact-us .slide img {
+  width: 100%;
+  height: 407px;
+  object-fit: cover;
+}
+
+.contact-us-detail {
+  background-color: #324158;
+  color: white;
+  padding-top: 40px;
+}
+
+.contact-us-detail .heading {
+  justify-content: center;
+}
+
+.contact-us-detail .heading h2 {
+  letter-spacing: 0.05em;
+  font: normal normal normal 28px/1.4em proxima-n-w01-reg, sans-serif;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.contact-us-detail .line {
+  position: relative;
+  margin: 0px 0px 16px calc((100% - 980px) * 0.5);
+  left: 469px;
+  box-sizing: border-box;
+  border-top: 3px solid white;
+  width: 40px;
+}
+
+.contact-us-detail .text {
+  margin-top: 20px;
+  padding-bottom: 30px;
+  width: 549px;
+  position: relative;
+  margin: 0px 0px 31px calc((100% - 980px) * 0.5);
+  left: 216px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.contact-us-detail .text .links {
+  position: relative;
+  width: 549px;
+}
+
+@media (max-width: 575.98px) {
+  .contact-us-detail .heading h2 {
+    letter-spacing: 0.02em;
+    font: normal normal normal 20px/1.4em proxima-n-w01-reg, sans-serif;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .contact-us-detail .text {
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    /*width: 449px;*/
+    width: 431px;
+    position: relative;
+    margin: 0px 0px 31px calc((100% - 980px) * 0.5);
+    /*left: 265px;*/
+    left: 274px;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 1199.98px) {
+  .contact-us-detail .heading h2 {
+    letter-spacing: 0.02em;
+    font: normal normal normal 20px/1.4em proxima-n-w01-reg, sans-serif;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 991.98px) {
+  .contact-us-detail .heading h2 {
+    letter-spacing: 0.02em;
+    font: normal normal normal 20px/1.4em proxima-n-w01-reg, sans-serif;
+    font-size: 17px;
+    text-align: center;
+  }
+}
+.about-us .slide {
+  position: relative;
+}
+
+.about-us .slide img {
+  width: 100%;
+  height: 407px;
+  object-fit: cover;
+}
+
+.about-us-detail {
+  background-color: #324158;
+  color: white;
+  padding-top: 40px;
+}
+
+.about-us-detail .heading {
+  justify-content: center;
+}
+
+.about-us-detail .heading h2 {
+  letter-spacing: 0.05em;
+  font: normal normal normal 28px/1.4em proxima-n-w01-reg, sans-serif;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.about-us-detail .line {
+  position: relative;
+  margin: 0px 0px 16px calc((100% - 980px) * 0.5);
+  left: 469px;
+  box-sizing: border-box;
+  border-top: 3px solid white;
+  width: 40px;
+}
+
+.about-us-detail .text {
+  margin-top: 20px;
+  padding-bottom: 30px;
+  width: 549px;
+  position: relative;
+  margin: 0px 0px 31px calc((100% - 980px) * 0.5);
+  left: 216px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.about_text .content {
+  width: 800px;
+  left: 170px;
+  position: relative;
+  font-family: open sans, sans-serif;
+  font-size: 20px;
+}
+
+.iuk_vision {
+  color: white;
+  text-align: center;
+  background-color: #8b0000;
+}
+
+.iuk_vision h2 {
+  padding-top: 15px;
+}
+
+.iuk_mission {
+  color: white;
+  text-align: center;
+  background-color: #4b121b;
+}
+
+.iuk_mission h2 {
+  padding-top: 15px;
+}
+
+.iuk_vision p {
+  text-align: center;
+  font-size: 18px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.iuk_mission ul {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.iuk_mission li {
+  text-align: left;
+  font-size: 18px;
+}
+
+@media (max-width: 575.98px) {
+  .about-us-detail .heading h2 {
+    letter-spacing: 0.02em;
+    font: normal normal normal 20px/1.4em proxima-n-w01-reg, sans-serif;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .about-us-detail .text {
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 431px;
+    position: relative;
+    margin: 0px 0px 31px calc((100% - 980px) * 0.5);
+    left: 274px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .about_text .content {
+    position: relative;
+    width: auto;
+    left: auto;
+    font-family: open sans, sans-serif;
+    font-size: 20px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .about-us-detail .heading h2 {
+    letter-spacing: 0.02em;
+    font: normal normal normal 20px/1.4em proxima-n-w01-reg, sans-serif;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .about_text .content {
+    position: relative;
+    width: auto;
+    left: auto;
+    font-family: open sans, sans-serif;
+    font-size: 20px;
+  }
+}
+@media (max-width: 991.98px) {
+  .about-us-detail .heading h2 {
+    letter-spacing: 0.02em;
+    font: normal normal normal 20px/1.4em proxima-n-w01-reg, sans-serif;
+    font-size: 17px;
+    text-align: center;
+  }
+}
+.admissions .slide {
+  position: relative;
+}
+
+.admissions .slide img {
+  width: 100%;
+  height: 407px;
+  object-fit: cover;
+}
+
+.admissions-detail {
+  background-color: #324158;
+  color: white;
+  padding-top: 40px;
+}
+
+.admissions-detail .heading {
+  justify-content: center;
+}
+
+.admissions-detail .heading h2 {
+  letter-spacing: 0.05em;
+  font: normal normal normal 28px/1.4em proxima-n-w01-reg, sans-serif;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.admissions-detail .line {
+  position: relative;
+  margin: 0px 0px 16px calc((100% - 980px) * 0.5);
+  left: 469px;
+  box-sizing: border-box;
+  border-top: 3px solid white;
+  width: 40px;
+}
+
+.admissions-detail .text {
+  margin-top: 20px;
+  padding-bottom: 30px;
+  width: 549px;
+  position: relative;
+  margin: 0px 0px 31px calc((100% - 980px) * 0.5);
+  left: 216px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.field {
+  width: auto;
+  height: auto;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.field input, textarea {
+  width: 50%;
+  height: 50%;
+  border-radius: 0;
+  font: normal normal normal 16px/1.4em "open sans", sans-serif;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-width: 0 0 1px 0;
+  background-color: rgba(255, 255, 255, 0.43);
+  box-sizing: border-box !important;
+  color: #8B0000;
+  border-style: solid;
+  border-color: darkred;
+  font-size: 16px;
+  padding-bottom: 17px;
+  margin: 0;
+  max-width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  text-overflow: ellipsis;
+}
+
+.field button {
+  width: 140px;
+  height: 45px;
+  background-color: #4b121b;
+  border: solid #999997 0px;
+  cursor: pointer !important;
+  color: white;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #8B0000;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #8B0000;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #8B0000;
+}
+
+@media (max-width: 575.98px) {
+  .admissions-detail .heading h2 {
+    letter-spacing: 0.02em;
+    font: normal normal normal 20px/1.4em proxima-n-w01-reg, sans-serif;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .admissions-detail .text {
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    /*width: 449px;*/
+    width: 431px;
+    position: relative;
+    margin: 0px 0px 31px calc((100% - 980px) * 0.5);
+    /*left: 265px;*/
+    left: 274px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .field input, textarea {
+    width: 70%;
+    height: 70%;
+  }
+}
+@media (max-width: 1199.98px) {
+  .admissions-detail .heading h2 {
+    letter-spacing: 0.02em;
+    font: normal normal normal 20px/1.4em proxima-n-w01-reg, sans-serif;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .field input, textarea {
+    width: 70%;
+    height: 70%;
+  }
+}
+@media (max-width: 991.98px) {
+  .admissions-detail .heading h2 {
+    letter-spacing: 0.02em;
+    font: normal normal normal 20px/1.4em proxima-n-w01-reg, sans-serif;
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .field input, textarea {
+    width: 70%;
+    height: 70%;
+  }
+}
+.college-of-business .slide {
+  position: relative;
+}
+
+.college-of-business .slide img {
+  width: 100%;
+  height: 407px;
+  object-fit: cover;
+}
+
+.degree_list .row {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.degree_list .degree__program_light {
+  background-color: #cbd0d6;
+  height: 100px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.degree_list .degree__program_dark {
+  background-color: #b6bfc8;
+  height: 100px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.padding-top-40 {
+  padding-top: 40px;
+}
+
 html:lang(ar) body {
   text-align: right;
 }

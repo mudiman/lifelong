@@ -1,0 +1,32 @@
+.college-of-business .slide {
+  position: relative;
+}
+
+.college-of-business .slide img {
+  width: 100%;
+  height: 407px;
+  object-fit: cover;
+}
+
+.degree_list .row {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.degree_list .degree__program_light {
+  background-color: #cbd0d6;
+  height: 100px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.degree_list .degree__program_dark {
+  background-color: #b6bfc8;
+  height: 100px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.padding-top-40 {
+  padding-top: 40px;
+}
