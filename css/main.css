@@ -16360,6 +16360,9 @@ readers do not read off random characters that represent icons */
   font-weight: bold;
 }
 
+.slider {
+  margin-left: -1px;
+}
 .slider .slide {
   position: relative;
 }
@@ -18268,7 +18271,7 @@ body {
 .map .map-container {
   padding: 20px;
   padding-top: 10px;
-  padding-bottom: 0px;
+  padding-bottom: 1px;
 }
 @media (max-width: 575.98px) {
   .map .map-container {

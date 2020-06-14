@@ -162,7 +162,7 @@ body {
   .map-container {
     padding: 20px;
     padding-top: 10px;
-    padding-bottom: 0px;
+    padding-bottom: 1px;
     @include media-breakpoint-down(xs) {
       padding: 15px;
     }
