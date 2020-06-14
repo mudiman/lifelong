@@ -11,8 +11,11 @@
         $('.navbar-icon').show();
         enableScroll();
     });
-    $('.dropdown-toggle').on('click', function () {
+    $('.dropdown-menu show').on('click', function () {
         $(this).toggleClass('open');
+    });
+    $('.dropdown-menu show').on('click', function (e) {
+        $(this).parents('.dropdown-menu').removeClass('open');
     });
     $(document).ready(function () {
         $('.slider').slick({
@@ -27,10 +30,16 @@
             arrows:false,
             speed: 300,
         });
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            $(window).on('scroll', function () {
+                if ($('#navbars-menu').css('display') == 'block'
+                    && window.scrollY > 200) {
+                    window.scrollTo(0, 200);
+                }
+            });
+        }
 
-        // setTimeout(function() {
-        //     $('[dir="rtl"] .slick-slide').css('float','unset');
-        // }, 1000);
+
     });
     if (typeof universalParallax !== 'undefined') {
         new universalParallax().init();
@@ -41,6 +50,9 @@
 
 
 function disableScroll() {
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        return;
+    }
     // Get the current page scroll position
     scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,

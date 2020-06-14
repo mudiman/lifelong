@@ -30,25 +30,24 @@
       position: absolute;
       right: 10%;
       top: 50%;
+      @include media-breakpoint-down(md) {
+        top: 32%;
+      }
       button {
-        display: none;
+        display: block;
         color: white;
         width: 320px;
         height: 70px;
         background-color: rgba(75, 18, 27, 1);
         border-radius: 0px;
-        @include media-breakpoint-down(xs) {
-          width: 290px;
+        @include media-breakpoint-down(md) {
+          width: 115px;
+          height: 50px;
         }
         &:hover {
           background-color: #810304;
           color:white;
         }
-      }
-    }
-    &:hover {
-      button {
-        display: block;
       }
     }
   }

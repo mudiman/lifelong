@@ -16398,25 +16398,28 @@ readers do not read off random characters that represent icons */
   right: 10%;
   top: 50%;
 }
+@media (max-width: 991.98px) {
+  .slider .slide__button_container {
+    top: 32%;
+  }
+}
 .slider .slide__button_container button {
-  display: none;
+  display: block;
   color: white;
   width: 320px;
   height: 70px;
   background-color: #4b121b;
   border-radius: 0px;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   .slider .slide__button_container button {
-    width: 290px;
+    width: 115px;
+    height: 50px;
   }
 }
 .slider .slide__button_container button:hover {
   background-color: #810304;
   color: white;
-}
-.slider .slide:hover button {
-  display: block;
 }
 
 a {
@@ -16506,6 +16509,13 @@ a {
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 2px;
+}
+@supports (-moz-appearance: none) {
+  @media (min-width: 992px) {
+    .highlights .award__desc {
+      margin-bottom: 10px;
+    }
+  }
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .highlights .award__desc {
