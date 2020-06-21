@@ -18,6 +18,8 @@
         $(this).parents('.dropdown-menu').removeClass('open');
     });
     $(document).ready(function () {
+        var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
+
         $('.slider').slick({
             autoplay: true,
             autoplaySpeed: 3000,
