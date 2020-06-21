@@ -18,36 +18,29 @@
                 <a href="contact-us.html">Contact Us</a>
                 <a href="mailto:info@iuk.edu.kw">Email</a>
             </div>
-            <div class="navbar__menu d-block d-md-block d-lg-none">
-                <div class="navbar-icon fas fa-bars"></div>
-                <div class="navbar-icon-close fas fa-times"></div>
-            </div>
-
         </div>
     </div>
     <div class="container">
         <div class="navbar__primary d-flex">
             <a class="navbar-brand" href="#">
                 <div class="logo ">
-                    <img src="images/logo.png"/>
+                    <img src="images/logo.svg"/>
                     <p class="navbar-title">
                         International University <br/> of Science & Technology in Kuwait<br/>
                         <span class="arabic-text">الجــامـعـة الــدولـيـة في الــكـويـت</span>
                     </p>
+                    <div class="d-flex navbar__primary_container">
+                        <div class="navbar__menu">
+                            <div class="navbar-icon fas fa-bars"></div>
+                            <div class="navbar-icon-close fas fa-times"></div>
+                        </div>
+                    </div>
                 </div>
-
             </a>
-            <div class="d-flex navbar__primary_container">
-                <div class="navbar__menu d-none d-lg-block">
-                    <div class="navbar-icon fas fa-bars"></div>
-                    <div class="navbar-icon-close fas fa-times"></div>
-                    <span class="menu-lbl">Menu</span>
-                </div>
-            </div>
-
         </div>
     </div>
     <div class="navbar__secondary d-flex flex-row justify-content-center align-items-center">
+
         <p></p>
     </div>
 </nav>
@@ -156,30 +149,30 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="slider">
         <div class="slide">
-            <img class="img-fluid" src="images/slides_1.jpg"/>
-            <div class="slide__message">
-                <p>Why IUK? ... Access to knowledge and wisdom through a well stocked library. </p>
-            </div>
-            <div class="slide__button_container">
-                <button type="button" class="btn ">Read more</button>
+            <img class="img-fluid" src="images/slides_2.jpg"/>
+            <div class="slide__message d-flex">
+                <p>Why IUK? ... World class faculty and mentors. </p>
+                <div class="slide__message__offset">
+                    <button type="button" class="btn ">Read more</button>
+                </div>
             </div>
         </div>
         <div class="slide">
-            <img class="img-fluid" src="images/slides_2.jpg"/>
-            <div class="slide__message">
-                <p>Why IUK? ... Modern purpose built campus. </p>
-            </div>
-            <div class="slide__button_container">
-                <button type="button" class="btn ">Read more</button>
+            <img class="img-fluid" src="images/slides_1.jpg"/>
+            <div class="slide__message d-flex">
+                <p>Why IUK? ... Stimulating spaces for dialogue and learning. </p>
+                <div class="slide__message__offset">
+                    <button type="button" class="btn ">Read more</button>
+                </div>
             </div>
         </div>
         <div class="slide">
             <img class="img-fluid" src="images/slides_3.jpg"/>
-            <div class="slide__message">
-                <p>Why IUK? ... Stimulating spaces for dialogue and learning. </p>
-            </div>
-            <div class="slide__button_container">
-                <button type="button" class="btn ">Read more</button>
+            <div class="slide__message d-flex">
+                <p>Why IUK? ... Modern purpose built campus. </p>
+                <div class="slide__message__offset">
+                    <button type="button" class="btn ">Read more</button>
+                </div>
             </div>
         </div>
     </div>
@@ -224,7 +217,7 @@
 
     <div class="container message_board">
         <div class="row message_board__row">
-            <div class="d-block d-sm-block d-md-none">
+            <div class="d-block d-sm-block d-md-none ">
                 <h5 class="message_board_title">
                     Message from the President<br/>
                     <span class="message_board_name">Dr. Ahmad Al-Aazib</span><br/>
@@ -232,7 +225,7 @@
                 </h5>
             </div>
             <div class="col-md-4 message_board__image">
-                <img class="img-fluid clipped"  height="227px" src="images/DrBarakat.png" width="227px"/>
+                <img class="img-fluid"  height="227px" src="images/DrBarakat.png" width="227px"/>
             </div>
             <div class="col-md-7 message_board__msg">
                 <div class="d-none d-lg-block d-md-block">
@@ -243,13 +236,13 @@
                     </h5>
                 </div>
 
-                <h4 class="message_board__msg__desc">It gives me immense pleasure to welcome you to IUK which is a premier institution of higher
+                <p class="message_board__msg__desc">It gives me immense pleasure to welcome you to IUK which is a premier institution of higher
                     learning.
                     IUK is not just a university, it is a platform which aims to develop the human resource of Kuwait in
-                    line with global best practices and Kuwait Vision 2035.</h4>
+                    line with global best practices and Kuwait Vision 2035.</p>
 
                 <p>
-                    <a class="read-more" href="#">Read More</a>
+                    <button class="btn read-more" type="button">Read More</button>
                 </p>
             </div>
         </div>
@@ -258,11 +251,8 @@
     <div class="compass-tour">
         <div class="row compass-tour__msg">
             <div class="d-flex flex-column compass-tour__msg__cont">
-                <h3 class="compass-tour__msg__heading">Campus Virtual Tour
+                <h3 class="compass-tour__msg__heading">Virtual Campus Tour
                 </h3>
-                <h5>
-                    Click to Begin
-                </h5>
             </div>
             <img class="compass-tour__msg__img" src="images/play.png" />
         </div>
@@ -277,15 +267,15 @@
                 </div>
                 <div class="col-lg-8 apply_now__container__msg align-self-center">
                     <div class="apply_now__container__msg__question">
-                        <h5 class="apply_now__container__msg__question__pre">
+                        <p class="apply_now__container__msg__question__pre">
                             Are you <span class="ready">READY ?</span>
-                        </h5>
-                        <h5 class="apply_now__container__msg__question__post">
+                        </p>
+                        <p class="apply_now__container__msg__question__post">
                             <span class="ready">READY &nbsp;</span> to <span class="action-word">LEARN</span> ?
-                        </h5>
-                        <h5 class="apply_now__container__msg__question__final">
+                        </p>
+                        <p class="apply_now__container__msg__question__final">
                             <span class="ready">READY &nbsp;</span> to <span class="action-word">LEAD</span> ?
-                        </h5>
+                        </p>
                     </div>
                     <div class="apply_now__container__msg__button d-none d-lg-block d-md-none">
                         <button class="btn" type="button">Apply now</button>
@@ -302,26 +292,26 @@
 
         <div class="container apply_now_1__container align-self-center">
             <div class="apply_now_1__container__msg row">
-                <div class="col-9 align-self-center apply_now_1__container__msg__qc">
-                    <div class="d-flex apply_now_1__container__msg__question">
-                        <h5 class="apply_now_1__container__msg__question__pre">
+                <div class="col-12 col-lg-8 align-self-center apply_now_1__container__msg__qc">
+                    <div class="d-flex apply_now_1__container__msg__qc__question">
+                        <p class="apply_now_1__container__msg__qc__question__pre">
                             Do <br/>
                             Are
-                        </h5>
-                        <h4 class="you">
+                        </p>
+                        <p class="you">
                             <i class="fas fa-angle-double-left"></i> You <i class="fas fa-angle-double-right"></i>
-                        </h4>
-                        <h5 class="apply_now_1__container__msg__question__post">
-                            love to teach? <br/>
-                            ready to inspire?
-                        </h5>
+                        </p>
+                        <p class="apply_now_1__container__msg__qc__question__post">
+                            love to <span class="action-word">TEACH &nbsp;?</span> <br/>
+                            ready to <span class="action-word">INSPIRE ?</span>
+                        </p>
                     </div>
                     <div class="text-center apply_now_1__container__msg__button">
-                        <button class="btn btn-outline-primary custom-button" type="button">Apply now</button>
+                        <button class="btn btn-outline-primary" type="button">Apply now</button>
                     </div>
                 </div>
-                <div class="col-3 apply_now_1__container__img">
-                    <img class="img-fluid" height="232px" src="images/Sam-Fannin2.png" width="282px"/>
+                <div class="col-12 col-lg-3 apply_now_1__container__img">
+                    <img class="img-fluid"  src="images/Sam-Fannin2.png" />
                 </div>
             </div>
         </div>
@@ -331,114 +321,59 @@
     <div class="apply_now_2 d-flex">
         <div class="container apply_now_2__container align-self-center ">
             <div class="row align-items-center justify-content-between text-center">
-                <div class="col-xl-2  col-12 apply_now_2__container__good">
+                <p class="col-xl-2  col-12 apply_now_2__container__good">
                     Are you Good at
-                </div>
-                <div class="col-xl-6 col-12 apply_now_2__container__skills">
+                </p>
+                <p class="col-xl-6 col-12 apply_now_2__container__skills">
                      Academic Counselling | Customer Service | Human Resources |
                     Accounting | Information Technology
 
-                </div>
-                <div class="col-xl-4 col-12 apply_now_2__container__button">
+                </p>
+                <p class="col-xl-4 col-12 apply_now_2__container__button">
                     <button class="btn" type="button">Apply now</button>
-                </div>
+                </p>
             </div>
         </div>
     </div>
 
     <div class="highlights">
-        <div class="container">
-            <h4 class="text-center highlights__heading">IUK Highlights</h4>
-            <div class="row">
-                <div class="col-xl-5 game">
-                    <div class="row">
-                        <div class="col-8 game__img">
-                            <img class="" src="images/football.png"/>
-                        </div>
-                        <div class="col-4 game__desc">
-                            <h5 class="game__desc__heading">
-                                IUK wins Kuwait Inter University Soccer Championship
-                            </h5>
-                            <a class="btn" href="#">Read more...</a>
-                        </div>
+        <div class="container highlights__container">
+            <h4 class="text-center highlights__heading"><span>IUK</span> Highlights</h4>
+            <div class="row ">
+                <div class="col-12 col-xl-4 highlights__item">
+                    <img class="highlights__item__img" src="images/Image%20by%20Philippe%20Bout.webp"/>
+                    <div class="highlights__item__txt">
+                        <h5 class="highlights__item__txt__heading">
+                            Brand new campus ready !!!
+                        </h5>
+                        <p class="highlights__item__txt__p">Our brand new purpose built campus is ready to welcome students starting Fall 2020. </p>
+                    </div>
+                    <div class="highlights__item__btn">
+                        <button class="btn" type="button">Read more</button>
                     </div>
                 </div>
-                <div class="col-xl-7 d-flex award-container">
-                    <div class="col-6 award">
-                        <img class="" src="images/award.png"/>
-                        <div class="award__desc">
-                            <h5>IUK awarded Prestigious eGovernment<br/>
-
-                            </h5><a class="" href="#">Read more...</a>
-                        </div>
+                <div class="col-12 col-xl-4 highlights__item">
+                    <img class="highlights__item__img" src="images/Young%20Professor.webp"/>
+                    <div class="highlights__item__txt">
+                        <h5 class="highlights__item__txt__heading">
+                            Faculty Recruitment Underway !!!
+                        </h5>
+                        <p class="highlights__item__txt__p">We are lining up world acclaimed faculty to impart instructions to our students.</p>
                     </div>
-                    <div class="col-6 host">
-                        <div class="host__desc">
-                            <h5>IUK also hosts Green building moot<br/>
-
-                            </h5><a class="" href="#">Read more...</a>
-                        </div>
-                        <img class="" src="images/auditorium.png"/>
+                    <div class="highlights__item__btn">
+                        <button class="btn" type="button">Read more</button>
                     </div>
                 </div>
-            </div>
-            <div class="row second-highlights">
-                <div class="col-xl-7 d-flex award-container">
-                    <div class="col-6 award twitter">
-                        <div class="list-twitter">
-                            <ul class="">
-                                <li><a href="#">
-                                    <div class="d-flex">
-                                        <div class="col-3">
-                                            <img class="img-fluid"
-                                                 src="images/twitter_li.png" />
-                                        </div>
-                                        <div class="col-9">
-                                            Green Building Moot Kickstarted with 300 attendees
-                                        </div>
-                                    </div>
-                                </a></li>
-                                <li><a href="#">
-                                    <div class="d-flex">
-                                        <div class="col-3">
-                                            <img class="img-fluid"
-                                                 src="images/twitter_li.png" />
-                                        </div>
-                                        <div class="col-9">
-                                            Green Building Moot attendees welcomed on campus
-                                        </div>
-                                    </div>
-                                </a></li>
-                            </ul>
-                        </div>
-                        <div class="award__desc">
-                            <h5>
-                                <img class="img-thumbnail" height="32px" src="images/twitter_ico.png" width="32px"/> @iuk.kw
-                            </h5>
-                        </div>
+                <div class="col-12 col-xl-4 highlights__item">
+                    <img class="highlights__item__img" src="images/Laptop%20Keyboard.webp"/>
+                    <div class="highlights__item__txt">
+                        <h5 class="highlights__item__txt__heading">
+                            COVID-19 Ready !!!
+                        </h5>
+                        <p class="highlights__item__txt__p">We have resources and tools in place to support our students'  learning during and after COVID-19. </p>
                     </div>
-                    <div class="col-6 host museum">
-                        <div class="host__desc">
-                            <h5>
-                                <img class="img-thumbnail" height="32px" src="images/youtube.png" width="32px"/> iuk.kw
-                            </h5>
-                        </div>
-                        <img class="museum__img" src="images/robot.png"/>
-                    </div>
-                </div>
-                <div class="col-xl-5 game">
-                    <div class="row">
-                        <div class="col-8 game__img">
-                            <img  class="" src="images/museum.png"/>
-                        </div>
-                        <div class="col-4 game__desc">
-                            <h5 class="game__desc__ico">
-                                <img class="img-thumbnail" height="32px" src="images/instagram.png" width="32px"/> iuk.kw
-                            </h5>
-                            <h6>
-                                IUK art exhibition in collaboration with khalifa Qattan Art Gallery
-                            </h6>
-                        </div>
+                    <div class="highlights__item__btn">
+                        <button class="btn" type="button">Read more</button>
                     </div>
                 </div>
             </div>
@@ -447,7 +382,7 @@
 
         <div class="map">
             <div class="text-center">
-                <h3>Reach Us</h3>
+                <h3 class="map__heading">Reach Us</h3>
             </div>
             <div class="map-container">
                 <div class="mapouter">
@@ -473,10 +408,9 @@
             </div>
         </div>
         <div class="newsletter text-center">
-            <h4>
-                Remain in Touch <i class="fas fa-angle-double-right"></i> &nbsp;
-            </h4>
-            <input placeholder="   Enter your email to subscribe to our newsletter" type="text"/>
+            <p>
+                Address
+            </p>
         </div>
 </main>
 
@@ -484,7 +418,7 @@
     <div class="container">
         <div class="row footer__middle">
             <div class="logo col-md-3 col-lg-2">
-                <img src="images/logo.png"/>
+                <img src="images/logo.svg"/>
             </div>
             <div class="col-md-4 col-lg-4">
                 <div class="university">
@@ -516,7 +450,7 @@
             </div>
         </div>
     </div>
-    <div class="footer__bottom d-flex flex-row justify-content-center align-items-center row">
+    <div class="footer__bottom justify-content-center align-items-center row">
         <p>2020 All Rights Reserved, International University of Science & Technology  in Kuwait..
         </p>
     </div>
@@ -531,6 +465,7 @@
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/vendor/slick.min.js" type="text/javascript"></script>
 <script src="js/vendor/universal-parallax.js" type="text/javascript"></script>
+<script src="nunjucks.js"></script>
 <script type="text/javascript">
     if (document.documentMode || /Edge/.test(navigator.userAgent)) {
         document.write('<script type="text/javascript" src="js/vendor/clip-path-polyfill.js"><\/script>');

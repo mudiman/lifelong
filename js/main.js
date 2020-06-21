@@ -33,8 +33,8 @@
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             $(window).on('scroll', function () {
                 if ($('#navbars-menu').css('display') == 'block'
-                    && window.scrollY > 200) {
-                    window.scrollTo(0, 200);
+                    && window.scrollY > 250) {
+                    window.scrollTo(0, 250);
                 }
             });
         }
@@ -48,6 +48,7 @@
 
 })(jQuery);
 
+nunjucks.configure({ autoescape: true });
 
 function disableScroll() {
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {

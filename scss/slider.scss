@@ -12,18 +12,29 @@
     }
     &__message {
       position: absolute;
-      bottom: 0;
-      left:0;
-      padding: 10px;
-      background-color: rgba(156, 38, 38, .8);
+      bottom: 34px;
+      left: 0;
+      background-color: rgba(156, 38, 38, 0.85);
       color: white;
-      width: 100%;
-      height: 38px;
+      width: 60%;
+      height: 42px;
       @include media-breakpoint-down(xs) {
-        height: 54px;
+        width: 100%;
       }
       p {
         font: normal normal normal 14px/1.4em futura-lt-w01-light,sans-serif;
+        padding: 10px;
+        @include media-breakpoint-down(xs) {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+      &__offset{
+        background-color: $maron;
+        margin-left: auto;
+        height: 100%;
+        display: flex;
       }
     }
     &__button_container {

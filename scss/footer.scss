@@ -53,13 +53,13 @@
     margin-top: 15px;
     text-align: center;
     height: 50.4px;
+    font-family: "Open Sans";
     @include media-breakpoint-down(xs) {
       height: 72px;
     }
     p {
       font-size: 14px;
       text-align: left;
-      padding-top: 13px;
       margin-bottom: 0rem;
       @include media-breakpoint-down(xs) {
         text-align: center;
@@ -71,7 +71,7 @@
     }
   }
   .social-icons {
-    font-size: 27px;
+    font-size: 20px;
     @include media-breakpoint-down(md) {
       padding: 0px;
     }

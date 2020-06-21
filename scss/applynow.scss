@@ -1,11 +1,14 @@
 .apply_now {
   background-color: #CBD0D6;
   color: #8B0000;
-  @include media-breakpoint-down(xs) {
-    padding-top: 20px;
+  height: $apply-now-height;
+  font-family: "Open Sans",Cambria;
+  @include media-breakpoint-down(md) {
+    padding-top: 10px;
+    height: $apply-now-height-mobile;
   }
   &__container {
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(md) {
       margin: 0px;
 
     }
@@ -16,9 +19,8 @@
         margin-right: 0px;
         text-align: center;
       }
-      @include media-breakpoint-down(xs) {
+      @include media-breakpoint-down(md) {
         padding-left: 0;
-
       }
       img {
         margin-bottom: 4px;
@@ -26,8 +28,9 @@
         @include media-breakpoint-down(md) {
           margin-bottom: 0px;
           margin-left: -48px;
+          margin-top: -15px;
         }
-        @include media-breakpoint-down(xs) {
+        @include media-breakpoint-down(md) {
           width: 240px;
           height: 198px;
           object-fit: cover;
@@ -39,13 +42,16 @@
       padding-left: 0;
       @include media-breakpoint-down(md) {
         order: -1;
+        display: flex;
+        justify-content: center;
+        padding-right: 0;
       }
       &__question {
-        h5 {
+        p {
           font-size: 2.5rem;
           margin-bottom: -10px;
-          @include media-breakpoint-down(xs) {
-            margin-bottom: -1px;
+          @include media-breakpoint-down(md) {
+            margin-bottom: -8px;
             letter-spacing: 1.8px;
             font-size: 24px;
           }
@@ -53,32 +59,23 @@
             margin-bottom: 10px;
           }
         }
-        .ready {
-          font-weight: 700;
-          color: #4B121B;
-
-        }
-        .action-word {
-          font-weight: bold;
-        }
-
         &__post, &__final {
-          margin-left: 147px;
+          margin-left: 158px;
         }
         &__post {
-          @include media-breakpoint-down(xs) {
-            margin-left: 64px;
+          @include media-breakpoint-down(md) {
+            margin-left: 80px;
           }
         }
         &__final {
-          @include media-breakpoint-down(xs) {
-            margin-left: 33px;
+          @include media-breakpoint-down(md) {
+            margin-left: 42px;
           }
         }
       }
 
       &__button {
-        margin-left: 147px;
+        margin-left: 158px;
         @include media-breakpoint-down(md) {
           text-align: center;
           margin-left: 0;
@@ -115,56 +112,76 @@
 .apply_now_1 {
   color: $white;
   position: relative;
-  //background-image: url("../images/apply-now-2.webp");
-  background-color: #0c5460;
-  height: 210px;
+  font-family: "Open Sans",Cambria;
+  background-color: #B6BFC8;
+  color: #8B0000;
+  height: $apply-now-height;
   @include media-breakpoint-down(lg) {
     padding-top: 20px;
   }
-  @include media-breakpoint-down(sm) {
-    //background-image: url("../images/apply-now-2-mob.webp");
-    height: 170px;
-    padding-top: 0px;
+  @include media-breakpoint-down(md) {
+    padding-top: 10px;
+    height: $apply-now-height-mobile;
   }
 
   &__container {
+    @include media-breakpoint-down(sm) {
+      align-self: unset !important;
+    }
     &__msg {
       .you {
         margin-top:  9px;
       }
-      &__qc{
+      &__qc {
         z-index: 2;
-        @include media-breakpoint-down(xs) {
+        @include media-breakpoint-down(md) {
           flex: 0 0 100%;
           max-width: 100%;
+          padding: 0px 20px;
+        }
+        &__question {
+          margin-bottom: 15px;
+          font-size: 24px;
+          @include media-breakpoint-down(md) {
+            margin-bottom: 0px;
+            justify-content: center;
+          }
+          .you {
+            font-size: 2.5rem;
+            @include media-breakpoint-down(md) {
+              font-size: 20px;
+              margin-top: 20px;
+            }
+          }
+          &__pre {
+            font-size: 2.5rem;
+            @include media-breakpoint-down(md) {
+              font-size: 24px;
+              margin-bottom: 0px;
+            }
+          }
+          &__post {
+            font-size: 2.5rem;
+            @include media-breakpoint-down(md) {
+              font-size: 24px;
+              margin-bottom: 0px;
+            }
+          }
         }
       }
-      &__question {
-        margin-bottom: 15px;
-        .you {
-          @include media-breakpoint-up(md) {
-            font-size: 2.8rem;
-          }
-        }
-        &__pre {
-          @include media-breakpoint-up(md) {
-            font-size: 2rem;
-          }
-        }
-        &__post {
-          @include media-breakpoint-up(md) {
-            font-size: 2rem;
-          }
-        }
-      }
-
       &__button {
         @include media-breakpoint-down(xs) {
-          transform: translateX(-16%)
+
         }
         button {
-          padding: .5rem 5rem;
+          height: 42px;
+          width: 160px;
+          background-color: #4b121b;
+          color: white;
+          border-radius: 0px;
+          border: 0px;
           margin-left: 12rem;
+          font-size: 16px;
           @include media-breakpoint-down(md) {
             margin-left: 0;
             margin-bottom: 20px;
@@ -181,15 +198,15 @@
         text-align: center;
       }
       @include media-breakpoint-down(lg) {
-        position: absolute;
-        right: -20px;
-        bottom: 0px;
+        text-align: center;
         padding: 0px;
         z-index: 1;
       }
       img {
-        @include media-breakpoint-down(xs) {
-          object-fit: contain;
+        width: 282px;
+        object-fit: cover;
+        @include media-breakpoint-down(md) {
+          width: 254px;
         }
       }
     }
@@ -201,14 +218,25 @@
   color: #8B0000;
   padding-top:5px;
   padding-bottom:5px;
+  height: $apply-now-height;
+  font-family: "Open Sans",Cambria;
+  @include media-breakpoint-down(sm) {
+    height: $apply-now-height-mobile;
+  }
   .apply_now_2__container {
     &__good {
       font-weight: bold;
+      font-size: 2rem;
       @include media-breakpoint-down(md) {
         margin-bottom: 10px;
+        font-size: 24px;
       }
     }
     &__skills {
+      font-size: 2rem;
+      @include media-breakpoint-down(md) {
+        font-size: 24px;
+      }
       &::before {
         content: '\f100';
         display: inline-block;

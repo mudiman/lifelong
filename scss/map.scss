@@ -1,0 +1,23 @@
+.map {
+  background-color: #FAFAFA;
+  padding-top: 20px;
+  font-family: $font-main;
+  @include media-breakpoint-down(xs) {
+    margin-top: 15px;
+  }
+  &__heading {
+    font-size: 40px;
+    color: #8B0000;
+    @include media-breakpoint-down(xs) {
+      font-size:24px
+    }
+  }
+  .map-container {
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    @include media-breakpoint-down(xs) {
+      padding: 15px;
+    }
+  }
+}

@@ -27,6 +27,10 @@
       }
       @include media-breakpoint-down(md) {
         padding-right: 0px;
+        min-height: 145px;
+      }
+      @include media-breakpoint-down(sm) {
+        padding-right: 0px;
         min-height: 0px;
       }
     }

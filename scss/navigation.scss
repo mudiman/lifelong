@@ -3,18 +3,19 @@
   color: $white;
   background-color: $theme-main-color;
   &__contact {
-    width: 93vw;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
     margin-top: 1px;
     height: 25px;
     background-color: #320F14;
-    @include media-breakpoint-down(xs) {
-      width: 100vw;
-    }
     .container {
       justify-content: flex-end;
       font-size: 13px;
+    }
+    a:hover {
+      color: white;
+      text-decoration: none;
     }
     a:first-of-type {
       margin-right: 20px;
@@ -24,9 +25,7 @@
     display: flex;
     align-items: center;
     z-index: 999;
-    @include media-breakpoint-down(xs) {
-      margin-top: 6px;
-    }
+
     .navbar-icon {
 
     }
@@ -50,6 +49,13 @@
       flex-direction: row;
       width: 100%;
       align-self: center;
+      position: absolute;
+      top: 78px;
+      right: 20px;
+      @include media-breakpoint-down(xs) {
+        width: 115px;
+        right: 0px;
+      }
     }
     .navbar-brand {
       margin-right: 0px;
@@ -87,11 +93,12 @@
       margin-bottom: 0;
       line-height: 18px;
       padding-top: 5px;
+      font-family: "Open Sans";
       @include media-breakpoint-down(xs) {
         margin: auto;
       }
       .arabic-text {
-        font-family:helveticaneueltw20-ligh,sans-serif;
+        font-family:"Helvetica Neue";
         font-size: 15px;
         margin-left: -7px;
         @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -105,17 +112,20 @@
   }
   &__menu {
     margin-left: auto;
+    @include media-breakpoint-down(xs) {
+      margin-left: unset;
+    }
   }
   &__secondary {
     width: 100%;
     height: 44px;
-    background-color: rgba(156, 38, 38, .8);
+    background-color: $theme-main-secondary-color;
     position: absolute;
     top: 96px;
     z-index: 1;
 
     @include media-breakpoint-down(xs) {
-      //top: 75px;
+      top: 102px;
       height: 35px;
       justify-content: flex-end !important;
       padding-right: 10px;
@@ -140,9 +150,17 @@
 .navbars-menu {
   display: none;
   z-index: 1060;
-
-  height: 100vh;
-  margin-top: 120px;
+  background-color: rgb(203, 208, 214,0.9);
+  padding-top: 50px;
+  position: absolute;
+  top: 140px;
+  width: 100%;
+  padding-bottom: 15px;
+  @include media-breakpoint-down(md) {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    top: 137px;
+  }
   .container {
     @include media-breakpoint-up(lg) {
       display: flex !important;
@@ -156,12 +174,24 @@
     z-index: 2;
     height: 100%;
     text-align: center;
+    @include media-breakpoint-down(md) {
+      position: relative;
+    }
     .navbar-nav {
       margin-top: 40px;
+      @include media-breakpoint-down(md) {
+        margin-top: 0px;
+      }
       li {
         line-height: 56px;
+        &.dropdown {
+          a {
+            color: #4B121B;
+            font-weight: bold;
+          }
+        }
         a {
-          color: #8B0000;
+          color: #320F14;
           &.active {
             color: black;
           }
@@ -170,8 +200,13 @@
     }
     .dropdown-menu {
       background-color: rgb(203, 208, 214);
-      .dropdown-item {
+      a.dropdown-item {
         padding: 0px;
+        color: #320F14 !important;
+        font-weight: normal !important;
+        &.active {
+          color: black;
+        }
       }
     }
     .dropdown-toggle::before {
@@ -197,16 +232,25 @@
       text-align: center;
     }
   }
-  a {
-    color: $black;
-    font-size: 14px;
-    &:hover {
-      color: $theme-main-color;
-      text-decoration: unset;
+  li {
+    margin-bottom: 0px;
+    a {
+      color: #320F14;
+      font-size: 14px;
+      &:hover {
+        color: $theme-main-color;
+        text-decoration: unset;
+      }
+    }
+    &.prime {
+      border-bottom: unset;
+      margin-bottom: 10px;
+      font-weight: bold;
+      a {
+        color: $maron;
+      }
     }
   }
-  .prime {
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
+
+
 }

@@ -1,202 +1,72 @@
 .highlights {
+  background-color: #FAFAFA;
   &__heading {
-    margin-top: 4rem;
+    font-size:40px;
+    padding-top: 3rem;
     margin-bottom: 1.5rem;
+    color: #8B0000;
+    font-family: $font-main;
     @include media-breakpoint-down(xs) {
-      margin-top: 1rem;
-      margin-bottom: 32px;
+      margin-top: 1.5rem;
+      margin-bottom: 0px;
+      font-size:24px
+    }
+    span {
+      font-weight:bold;
+      color:#4B121B;
     }
   }
-  .game {
-    color: $white;
-    .row {
-      height: 100%;
+  &__container {
+
+  }
+  .row {
+    justify-content: center;
+    margin: auto;
+  }
+  &__item {
+    background-color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0px 10px;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 24px;
+      padding-top: 24px;
+    }
+    @include media-breakpoint-up(lg) {
+      flex: 0 0 28.3333333333%;
+      max-width: 28.3333333333%;
     }
     &__img {
-      padding: 0;
-      img {
-        width: 100%;
-        height: 100%;
-      }
-    }
-    &__desc {
-      padding-top: 2.5rem;
-      background-color: maroon;
-      position: relative;
-      &__heading {
-        padding-bottom: 2.5rem;
-        word-break: break-word;
-      }
-      a {
-        color: $white;
-        padding-left: 0px;
-        position: absolute;
-        bottom: .5rem;
-        @include media-breakpoint-down(xs) {
-          padding: 0px;
-        }
-      }
-    }
-  }
-  .award-container {
-    padding:0px;
-    @include media-breakpoint-down(lg) {
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-  }
-  .award {
-    color: $white;
-    display: flex;
-    flex-direction: column;
-    padding-right: 0px;
-    @include media-breakpoint-down(lg) {
-      padding-left: 0px;
-
-    }
-    img {
-      height: 100%;
-    }
-    &__desc {
-      background-color: #385723;
-      padding-left: 10px;
-      padding-right: 10px;
-      padding-top: 2px;
-      @supports (-moz-appearance:none) {
-        @include media-breakpoint-up(lg) {
-          margin-bottom: 10px;
-        }
-      }
-      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-        height: 118px;
-      }
-      h5 {
-        margin-bottom: 0px;
-        padding-top: 8px;
-        @include media-breakpoint-down(sm) {
-          padding-top: 4px;
-        }
-      }
-      a {
-        color: $white;
-        margin-bottom: 10px;
-        display: inline-block;
-      }
-    }
-  }
-  .host {
-    color: $white;
-    display: flex;
-    flex-direction: column;
-    @include media-breakpoint-down(lg) {
-      padding-left: 0px;
-      padding-right: 0px;
-    }
-
-    img {
-      height: 100%;
-    }
-    &__desc {
-      padding: 10px;
-      background-color: #44546A;
-      padding-bottom: 0.5px;
-      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-        height: 118px;
-      }
-      h5 {
-        margin-bottom: 0px;
-      }
-      a {
-        color: $white;
-        margin-bottom: 10px;
-        display: inline-block;
-      }
-    }
-  }
-  .museum {
-    .host__desc {
-      background-color: #DC472E;
-      height: 60px;
-      @include media-breakpoint-down(lg) {
-        height: 50px;
-      }
-    }
-    &__img {
-      @include media-breakpoint-down(lg) {
-        height: 200px !important;
-      }
-    }
-  }
-  .twitter {
-    padding-left: 0px;
-    .list-twitter {
-      height: 100%;
       width: 100%;
-      background-color: #BDD7EE;
-      display: flex;
-
-      ul {
-        font-size: 1.5rem;
-        padding-left: 0px;
-        align-self: center;
-        list-style: none;
+      @include media-breakpoint-down(sm) {
+        width: 220px;
+      }
+    }
+    &__txt {
+      margin-top: 60px;
+      @include media-breakpoint-down(sm) {
         margin-top: 10px;
-        margin-bottom: 0px;
+      }
+      &__heading {
+        color: #9C2525;
         @include media-breakpoint-down(sm) {
-          font-size: 14px;
+          font-size: 17px;
         }
-        li {
-          .col-3 {
-            padding-right: 0;
-            img {
-              height: unset;
-              width: 60px;
-            }
-          }
-          .col-9 {
-            padding-left: 5px;
-          }
-          a {
-            color: black;
-          }
-          &:first-of-type {
-            margin-bottom: 15px;
-          }
+      }
+      &__p {
+        font-size:15px;
+        width: 217px;
+        margin: auto;
+        min-height: 108px;
+        @include media-breakpoint-down(sm) {
+          width: 280px;
+          min-height: unset;
+          margin-bottom: 20px;
         }
       }
     }
-    .award__desc {
-      background-color: #02ACED;
-      height: 60px;
-      @include media-breakpoint-down(lg) {
-        height: 50px;
-      }
-    }
-    &__img {
-      @include media-breakpoint-down(lg) {
-        height: 200px !important;
-      }
-    }
-  }
-  .second-highlights {
-    margin-top: 10px;
-    @include media-breakpoint-down(lg) {
-      margin-top: -10px;
-    }
-    .game {
-      .row {
-        margin-right: 0px;
-        @include media-breakpoint-down(lg) {
-          margin-right: -15px;
-        }
-      }
-    }
-    .game__desc {
-      padding-top: 1rem;
-      background-color: #002060;
-      &__ico {
-        margin-bottom: 1.5rem;
-      }
+    &__btn {
+      margin-bottom: 20px;
     }
   }
 }

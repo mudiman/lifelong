@@ -1,13 +1,28 @@
 a {
   color: white;
 }
-.custom-button {
-  color: $white;
-  border-color: $white;
-  border-radius: 0;
-  border-width: medium;
-  font-size: 22px;
-}
+
 .img-custom {
   width: 100%;
+}
+.btn {
+  height: 42px;
+  width: 160px;
+  background-color: #4b121b;
+  color: white;
+  border-radius: 0;
+  @include media-breakpoint-down(xs) {
+    width: 160px;
+  }
+  &:hover {
+    background-color: #810304;
+    color: white;
+  }
+}
+.action-word {
+  font-weight: bold;
+}
+.ready {
+  font-weight: 700;
+  color: #4B121B;
 }
