@@ -1,19 +1,21 @@
 .highlights {
   background-color: #FAFAFA;
   &__heading {
-    font-size:40px;
+    font-size: 40px;
     padding-top: 3rem;
     margin-bottom: 1.5rem;
     color: #8B0000;
-    font-family: $font-main;
+    font-family: basic, Cambria;
+    font-weight: 400;
     @include media-breakpoint-down(xs) {
       margin-top: 1.5rem;
       margin-bottom: 0px;
-      font-size:24px
+      font-size: 24px
     }
+
     span {
-      font-weight:bold;
-      color:#4B121B;
+      font-weight: bold;
+      color: #4B121B;
     }
   }
   &__container {

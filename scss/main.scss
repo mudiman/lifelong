@@ -38,7 +38,7 @@ html, body {
 body {
   position: relative;
   h1,h2,h3,h4,h5,a {
-    font-family: basic,sans-serif;
+    font-family: $font-main-1;
   }
   p,button {
     font-family: $font-main;

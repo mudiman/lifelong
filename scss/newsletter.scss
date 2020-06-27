@@ -1,5 +1,6 @@
 .newsletter {
-  background-color: rgba(156, 38, 38, 0.8);
+  background-color: #8B0000;
+  opacity: 0.85;
   padding: 20px 0;
   color: $white;
   display: flex;
@@ -8,6 +9,7 @@
   width: 20%;
   transform: translateY(-100%);
   bottom: -55px;
+
   p {
     font-family: "Open Sans";
   }

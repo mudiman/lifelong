@@ -34,6 +34,7 @@
           font-weight: bold;
         }
       }
+
     }
     .list-unstyled {
       font-size: 14px;
@@ -45,7 +46,8 @@
       }
     }
     .footer__email {
-      margin-top: 20px;
+      margin-top: 10px;
+      font-size: 14px;
     }
   }
   &__bottom {
@@ -70,14 +72,26 @@
       }
     }
   }
-  .social-icons {
-    font-size: 20px;
+
+  .connect_container {
     @include media-breakpoint-down(md) {
-      padding: 0px;
+      text-align: left;
     }
-    @include media-breakpoint-down(sm) {
-      padding-right: 15px;
-      padding-left: 15px;
+
+    .connect_with_us {
+      margin-bottom: 0px;
+      font-size: 14px;
+      font-family: basic, sans-serif;
+    }
+
+    .social-icons {
+      font-size: 21px;
+      @include media-breakpoint-down(md) {
+        padding: 0px;
+      }
+      @include media-breakpoint-down(sm) {
+
+      }
     }
   }
 }

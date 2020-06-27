@@ -33,24 +33,24 @@
     }
     .message_board_title {
       color: #8B0000;
-      font-family: basic,Cambria !important;
-      .message_board_title {
-        font-size:14px;
-        letter-spacing:0em;
-      }
+      font-family: basic, Cambria !important;
+      font-size: 14px;
+
       .message_board_name {
         color: black;
-        font-size:26px;
-        letter-spacing:0.08em;
+        font-size: 26px;
+        letter-spacing: 0.08em;
         color: black;
       }
+
       .message_board_degree {
-        font-size:22px;
-        letter-spacing:0em;
+        font-size: 22px;
+        letter-spacing: 0em;
 
       }
     }
     &__desc {
+      line-height: 30px;
       font-weight: 100;
       font-size: 22px;
       padding-bottom: 20px;

@@ -1,7 +1,8 @@
 .navbar {
-  padding: 0px;
+  padding: 0;
   color: $white;
   background-color: $theme-main-color;
+
   &__contact {
     width: 100%;
     margin-right: auto;
@@ -9,6 +10,7 @@
     margin-top: 1px;
     height: 25px;
     background-color: #320F14;
+
     .container {
       justify-content: flex-end;
       font-size: 13px;
@@ -22,18 +24,18 @@
     }
   }
   .navbar__menu {
-    display: flex;
-    align-items: center;
-    z-index: 999;
-
-    .navbar-icon {
-
+    position: relative;
+    left: -18px;
+    bottom: -13px;
+    @include media-breakpoint-down(xs) {
+      bottom: -15px;
     }
 
     .navbar-icon-close {
       display: none;
     }
-    .menu-lbl{
+
+    .menu-lbl {
       margin-left: 5px;
     }
   }
@@ -49,27 +51,24 @@
       flex-direction: row;
       width: 100%;
       align-self: center;
-      position: absolute;
-      top: 78px;
-      right: 20px;
       @include media-breakpoint-down(xs) {
         width: 115px;
-        right: 0px;
+        right: 0;
       }
     }
     .navbar-brand {
-      margin-right: 0px;
+      margin-right: 0;
     }
     .logo {
       z-index: 2;
       position: relative;
 
       img {
-        width: 10.63rem;
-        height: 10.63rem;
+        width: 9.38rem;
+        height: 9.38rem;
         object-fit: cover;
         margin-bottom: 15px;
-        shape-outside:circle();
+        shape-outside: circle();
         float: left;
         margin-right: 50px;
         margin-top: -21px;
@@ -89,16 +88,17 @@
       }
     }
     .navbar-title {
-      font-size:14px;
+      font-size: 14px;
       margin-bottom: 0;
       line-height: 18px;
       padding-top: 5px;
-      font-family: "Open Sans";
+      font-family: $font-main-1;
       @include media-breakpoint-down(xs) {
         margin: auto;
       }
+
       .arabic-text {
-        font-family:"Helvetica Neue";
+        font-family: "Helvetica Neue";
         font-size: 15px;
         margin-left: -7px;
         @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -111,7 +111,7 @@
     }
   }
   &__menu {
-    margin-left: auto;
+
     @include media-breakpoint-down(xs) {
       margin-left: unset;
     }
@@ -119,9 +119,10 @@
   &__secondary {
     width: 100%;
     height: 44px;
-    background-color: $theme-main-secondary-color;
+    background-color: #8B0000;
+    opacity: 0.85;
     position: absolute;
-    top: 96px;
+    top: 96.3px;
     z-index: 1;
 
     @include media-breakpoint-down(xs) {
@@ -130,6 +131,7 @@
       justify-content: flex-end !important;
       padding-right: 10px;
     }
+
     p {
       margin-bottom: 0px;
       position: absolute;
@@ -150,17 +152,28 @@
 .navbars-menu {
   display: none;
   z-index: 1060;
-  background-color: rgb(203, 208, 214,0.9);
+  background-color: rgb(203, 208, 214, 0.9);
   padding-top: 50px;
   position: absolute;
   top: 140px;
   width: 100%;
-  padding-bottom: 15px;
+  z-index: 1;
+
+  @media only screen and (min-width: 1280px) {
+    height: 346px;
+  }
+  @media only screen and (min-width: 1536px) {
+    height: 394px;
+  }
+  @media only screen and (min-width: 1920px) {
+    height: 504px;
+  }
   @include media-breakpoint-down(md) {
     padding-top: 0px;
     padding-bottom: 0px;
     top: 137px;
   }
+
   .container {
     @include media-breakpoint-up(lg) {
       display: flex !important;
@@ -184,14 +197,18 @@
       }
       li {
         line-height: 56px;
+        border-bottom: unset;
+
         &.dropdown {
           a {
             color: #4B121B;
             font-weight: bold;
           }
         }
+
         a {
           color: #320F14;
+
           &.active {
             color: black;
           }
@@ -233,16 +250,19 @@
     }
   }
   li {
-    margin-bottom: 0px;
+    margin-bottom: 5px;
     border-bottom: 1px solid black;
+
     a {
       color: #320F14;
       font-size: 14px;
+
       &:hover {
         color: $theme-main-color;
         text-decoration: unset;
       }
     }
+
     &.prime {
       border-bottom: unset;
       margin-bottom: 10px;

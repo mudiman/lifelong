@@ -7,9 +7,11 @@
   }
   &__heading {
     font-size: 40px;
+    font-family: basic, Cambria;
+    font-weight: 400;
     color: #8B0000;
     @include media-breakpoint-down(xs) {
-      font-size:24px
+      font-size: 24px
     }
   }
   .map-container {
