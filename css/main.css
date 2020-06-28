@@ -16107,7 +16107,6 @@ readers do not read off random characters that represent icons */
   text-align: left;
   margin-bottom: 0rem;
 }
-
 @media (max-width: 575.98px) {
   .footer__bottom p {
     text-align: center;
@@ -16117,29 +16116,24 @@ readers do not read off random characters that represent icons */
     font-size: 12px;
   }
 }
-
 @media (max-width: 991.98px) {
   .footer .connect_container {
     text-align: left;
   }
 }
-
 .footer .connect_container .connect_with_us {
   margin-bottom: 0px;
   font-size: 14px;
   font-family: basic, sans-serif;
 }
-
 .footer .connect_container .social-icons {
   font-size: 21px;
 }
-
 @media (max-width: 991.98px) {
   .footer .connect_container .social-icons {
     padding: 0px;
   }
 }
-
 .navbar {
   padding: 0;
   color: #fff;
@@ -16157,36 +16151,34 @@ readers do not read off random characters that represent icons */
   justify-content: flex-end;
   font-size: 13px;
 }
-
 .navbar__contact a:hover {
   color: white;
   text-decoration: none;
 }
-
 .navbar__contact a:first-of-type {
   margin-right: 20px;
 }
-
 .navbar .navbar__menu {
   position: relative;
   left: -18px;
   bottom: -13px;
 }
-
+@supports (-ms-ime-align: auto) {
+  .navbar .navbar__menu {
+    left: 0;
+  }
+}
 @media (max-width: 575.98px) {
   .navbar .navbar__menu {
     bottom: -15px;
   }
 }
-
 .navbar .navbar__menu .navbar-icon-close {
   display: none;
 }
-
 .navbar .navbar__menu .menu-lbl {
   margin-left: 5px;
 }
-
 .navbar__primary {
   width: 100%;
   height: 70px;
@@ -16324,25 +16316,21 @@ readers do not read off random characters that represent icons */
   width: 100%;
   z-index: 1;
 }
-
 @media only screen and (min-width: 1280px) {
   .navbars-menu {
     height: 346px;
   }
 }
-
 @media only screen and (min-width: 1536px) {
   .navbars-menu {
     height: 394px;
   }
 }
-
 @media only screen and (min-width: 1920px) {
   .navbars-menu {
     height: 504px;
   }
 }
-
 @media (max-width: 991.98px) {
   .navbars-menu {
     padding-top: 0px;
@@ -16350,7 +16338,6 @@ readers do not read off random characters that represent icons */
     top: 137px;
   }
 }
-
 @media (min-width: 992px) {
   .navbars-menu .container {
     display: flex !important;
@@ -16738,80 +16725,66 @@ a {
 .college__bussiness {
   background-color: #CBD0D6;
 }
-
 .college__engineering {
   background-color: #B6BFC8;
 }
-
 .apply_now, .apply_now_1, .apply_now_2 {
   background-color: #CBD0D6;
   color: #8B0000;
   height: 289px;
   font-family: "Open Sans", Cambria;
 }
-
 @media (max-width: 991.98px) {
   .apply_now, .apply_now_1, .apply_now_2 {
     padding-top: 10px;
     height: 358.4px;
   }
 }
-
 .apply_now .container, .apply_now_1 .container, .apply_now_2 .container {
   height: 100%;
 }
-
 .apply_now__container, .apply_now_1__container, .apply_now_2__container {
   display: flex;
   justify-content: center;
   align-content: center;
 }
-
 .apply_now__container__img, .apply_now_1__container__img, .apply_now_2__container__img {
   text-align: center;
   flex-direction: column;
   height: 100%;
 }
-
 @media (max-width: 991.98px) {
   .apply_now__container__img, .apply_now_1__container__img, .apply_now_2__container__img {
     height: 50%;
   }
 }
-
 .apply_now__container__img img, .apply_now_1__container__img img, .apply_now_2__container__img img {
   height: 65%;
   object-fit: contain;
 }
-
 @media (max-width: 991.98px) {
   .apply_now__container__img img, .apply_now_1__container__img img, .apply_now_2__container__img img {
     height: 90%;
   }
 }
-
 .apply_now__container__img button, .apply_now_1__container__img button, .apply_now_2__container__img button {
   width: 170px;
   margin-left: 25px;
 }
-
 @media (max-width: 991.98px) {
   .apply_now__container__img button, .apply_now_1__container__img button, .apply_now_2__container__img button {
     margin-left: 0px;
   }
 }
-
 .apply_now__container__msg, .apply_now_1__container__msg, .apply_now_2__container__msg {
   height: 100%;
   text-align: center;
 }
-
 @media (max-width: 991.98px) {
   .apply_now__container__msg, .apply_now_1__container__msg, .apply_now_2__container__msg {
     height: 50%;
   }
 }
-
 .apply_now__container__msg img, .apply_now_1__container__msg img, .apply_now_2__container__msg img {
   height: 75%;
   object-fit: contain;
@@ -16820,7 +16793,6 @@ a {
 .apply_now_1 {
   background-color: #B6BFC8;
 }
-
 @media (max-width: 991.98px) {
   .apply_now_1 .apply_now__container .apply_now__container__img {
     margin-bottom: 30px;
@@ -16952,7 +16924,6 @@ a {
     margin-left: 25px;
   }
 }
-
 .compass-tour__msg__heading {
   font-size: 22px;
   margin-bottom: 0px;

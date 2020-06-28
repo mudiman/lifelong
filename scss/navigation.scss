@@ -27,6 +27,9 @@
     position: relative;
     left: -18px;
     bottom: -13px;
+    @supports (-ms-ime-align:auto) {
+      left: 0;
+    }
     @include media-breakpoint-down(xs) {
       bottom: -15px;
     }
