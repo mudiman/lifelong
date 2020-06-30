@@ -1,9 +1,46 @@
-$font-main: "Open Sans", sans-serif;
-$font-main-1: basic, sans-serif;
+//'Open Sans'
+@font-face {
+  font-family: 'Google Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Open_Sans/OpenSans-Regular.ttf')
+}
+@font-face {
+  font-family: 'Google Open Sans';
+  font-style: normal;
+  font-weight: bold;
+  src: url('../fonts/Open_Sans/OpenSans-Bold.ttf')
+}
+//basic
+@font-face {
+  font-family: 'Google Basic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Basic/Basic-Regular.ttf')
+}
+
+//Almarai
+@font-face {
+  font-family: 'Google Almarai';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Almarai/Almarai-Regular.ttf')
+}
+@font-face {
+  font-family: 'Google Open Sans';
+  font-style: normal;
+  font-weight: bold;
+  src: url('../fonts/Open_Sans/OpenSans-Bold.ttf')
+}
+
+$font-main: 'Google Open Sans', sans-serif;
+$font-main-1: 'Google Basic', sans-serif;
+$font-main-ar: 'Google Almarai', sans-serif;
 $blue-gray: rgb(132, 151, 176);
 
 $theme-main-color: #4B121B;
-$theme-main-secondary-color: rgba(156, 38, 38, .85);
+$theme-main-secondary-color: #8B0000;
+$theme-main-secondary-color-opacity: 0.85;
 
 $nav-one-color: #C6231D;
 $nav-one-sub-color: #990000;

@@ -4,6 +4,7 @@
 @import "fontawesome/fontawesome";
 @import "fontawesome/solid";
 @import "fontawesome/brands.scss";
+@import "material/materialdesignicons";
 @import "parallex/universal-parallax";
 @import "variables";
 @import "typography";
@@ -31,6 +32,9 @@
 @import "pages/admission-requirements";
 
 @import "rtl";
+
+
+
 
 html, body {
   overflow-x: hidden;

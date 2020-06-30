@@ -36,8 +36,11 @@
       }
 
     }
-    .list-unstyled {
+    .footer-menu {
+      a {
       font-size: 14px;
+      font-family: "Google Open Sans", sans-serif
+      }
     }
     &__third {
 
@@ -85,7 +88,7 @@
     }
 
     .social-icons {
-      font-size: 21px;
+      font-size: 31px;
       @include media-breakpoint-down(md) {
         padding: 0px;
       }
