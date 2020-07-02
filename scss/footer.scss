@@ -38,8 +38,8 @@
     }
     .footer-menu {
       a {
-      font-size: 14px;
-      font-family: "Google Open Sans", sans-serif
+        font-size: 14px;
+        font-family: "Google Open Sans", sans-serif;
       }
     }
     &__third {
@@ -49,8 +49,10 @@
       }
     }
     .footer__email {
-      margin-top: 10px;
-      font-size: 14px;
+      a {
+        font-size: 14px;
+        font-family: "Google Open Sans", sans-serif;
+      }
     }
   }
   &__bottom {
@@ -84,7 +86,7 @@
     .connect_with_us {
       margin-bottom: 0px;
       font-size: 14px;
-      font-family: basic, sans-serif;
+      font-family: "Google Open Sans", sans-serif;
     }
 
     .social-icons {

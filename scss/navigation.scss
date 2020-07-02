@@ -263,9 +263,9 @@
     border-bottom: 1px solid $theme-main-secondary-color;
 
     a {
-      color: #320F14;
+      color: $theme-main-secondary-color;
       font-size: 16px;
-
+      font-family: "Google Open Sans", sans-serif;
       &:hover {
         color: $theme-main-color;
         text-decoration: unset;
@@ -278,6 +278,7 @@
       font-weight: bold;
       a {
         color: $maron;
+        font-family: "Google Basic", sans-serif;
       }
     }
   }

@@ -37758,9 +37758,9 @@ readers do not read off random characters that represent icons */
 .footer__middle__third p {
   width: 33%;
 }
-.footer__middle .footer__email {
-  margin-top: 10px;
+.footer__middle .footer__email a {
   font-size: 14px;
+  font-family: "Google Open Sans", sans-serif;
 }
 .footer__bottom {
   background-color: #320F14;
@@ -37796,7 +37796,7 @@ readers do not read off random characters that represent icons */
 .footer .connect_container .connect_with_us {
   margin-bottom: 0px;
   font-size: 14px;
-  font-family: basic, sans-serif;
+  font-family: "Google Open Sans", sans-serif;
 }
 .footer .connect_container .social-icons {
   font-size: 31px;
@@ -38091,8 +38091,9 @@ readers do not read off random characters that represent icons */
   border-bottom: 1px solid #8B0000;
 }
 .navbars-menu li a {
-  color: #320F14;
+  color: #8B0000;
   font-size: 16px;
+  font-family: "Google Open Sans", sans-serif;
 }
 .navbars-menu li a:hover {
   color: #4B121B;
@@ -38105,6 +38106,7 @@ readers do not read off random characters that represent icons */
 }
 .navbars-menu li.prime a {
   color: #4B121B;
+  font-family: "Google Basic", sans-serif;
 }
 
 .slider {
@@ -38128,7 +38130,6 @@ readers do not read off random characters that represent icons */
   bottom: 34px;
   left: 0;
   background-color: #8B0000;
-  opacity: 0.85;
   color: white;
   width: 60%;
   height: 42px;
