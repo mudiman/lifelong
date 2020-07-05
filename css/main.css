@@ -38011,18 +38011,45 @@ readers do not read off random characters that represent icons */
     padding-top: 0px;
     padding-bottom: 0px;
     top: 137px;
+    height: 100vh;
   }
 }
-@media (min-width: 992px) {
-  .navbars-menu .container {
-    display: flex !important;
-  }
+.navbars-menu .navbar-desktop-container .menu-border-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #8B0000;
+  opacity: 0.85;
+  height: 30px;
+  border-bottom: 18px solid #4B121B;
+}
+.navbars-menu li {
+  margin-bottom: 5px;
+  border-bottom: 1px solid #8B0000;
+}
+.navbars-menu li a {
+  color: #8B0000;
+  font-size: 14px;
+  font-family: "Google Open Sans", sans-serif;
+}
+.navbars-menu li a:hover {
+  color: #4B121B;
+  text-decoration: unset;
+}
+.navbars-menu li.prime {
+  border-bottom: unset;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.navbars-menu li.prime a {
+  color: #4B121B;
+  font-size: 16px;
+  font-family: "Google Basic", sans-serif;
 }
 .navbars-menu .navbar-mobile {
   position: absolute;
   width: 100%;
   top: 0px;
-  background-color: rgba(203, 208, 214, 0.9);
   z-index: 2;
   height: 100%;
   text-align: center;
@@ -38045,7 +38072,7 @@ readers do not read off random characters that represent icons */
   border-bottom: unset;
 }
 .navbars-menu .navbar-mobile .navbar-nav li.dropdown a {
-  color: #4B121B;
+  color: #8B0000;
   font-weight: bold;
 }
 .navbars-menu .navbar-mobile .navbar-nav li a {
@@ -38059,11 +38086,15 @@ readers do not read off random characters that represent icons */
 }
 .navbars-menu .navbar-mobile .dropdown-menu a.dropdown-item {
   padding: 0px;
-  color: #320F14 !important;
   font-weight: normal !important;
+  font-family: "Google Open Sans", sans-serif;
 }
 .navbars-menu .navbar-mobile .dropdown-menu a.dropdown-item.active {
   color: black;
+}
+.navbars-menu .navbar-mobile .dropdown-toggle a {
+  font-family: "Google Basic", sans-serif;
+  color: #4B121B !important;
 }
 .navbars-menu .navbar-mobile .dropdown-toggle::before {
   display: inline-block;
@@ -38085,28 +38116,6 @@ readers do not read off random characters that represent icons */
   width: 100%;
   border: none;
   text-align: center;
-}
-.navbars-menu li {
-  margin-bottom: 5px;
-  border-bottom: 1px solid #8B0000;
-}
-.navbars-menu li a {
-  color: #8B0000;
-  font-size: 16px;
-  font-family: "Google Open Sans", sans-serif;
-}
-.navbars-menu li a:hover {
-  color: #4B121B;
-  text-decoration: unset;
-}
-.navbars-menu li.prime {
-  border-bottom: unset;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-.navbars-menu li.prime a {
-  color: #4B121B;
-  font-family: "Google Basic", sans-serif;
 }
 
 .slider {
@@ -38136,7 +38145,9 @@ readers do not read off random characters that represent icons */
 }
 @media (max-width: 575.98px) {
   .slider .slide__message {
+    flex-direction: column;
     width: 100%;
+    bottom: 43px;
   }
 }
 .slider .slide__message p {
@@ -38145,8 +38156,9 @@ readers do not read off random characters that represent icons */
 }
 @media (max-width: 575.98px) {
   .slider .slide__message p {
+    margin-bottom: 13px;
+    padding-bottom: 0;
     white-space: nowrap;
-    overflow: hidden;
     text-overflow: ellipsis;
   }
 }
@@ -38433,6 +38445,7 @@ a {
 @media (max-width: 991.98px) {
   .apply_now__container__img, .apply_now_1__container__img, .apply_now_2__container__img {
     height: 50%;
+    margin-bottom: 30px;
   }
 }
 .apply_now__container__img img, .apply_now_1__container__img img, .apply_now_2__container__img img {
@@ -38460,6 +38473,7 @@ a {
 @media (max-width: 991.98px) {
   .apply_now__container__msg, .apply_now_1__container__msg, .apply_now_2__container__msg {
     height: 50%;
+    order: -1;
   }
 }
 .apply_now__container__msg img, .apply_now_1__container__msg img, .apply_now_2__container__msg img {
@@ -38470,12 +38484,6 @@ a {
 .apply_now_1 {
   background-color: #B6BFC8;
 }
-@media (max-width: 991.98px) {
-  .apply_now_1 .apply_now__container .apply_now__container__img {
-    margin-bottom: 30px;
-  }
-}
-
 .newsletter {
   background-color: #8B0000;
   opacity: 0.85;
@@ -38487,9 +38495,6 @@ a {
   width: 20%;
   transform: translateY(-100%);
   bottom: -55px;
-}
-.newsletter p {
-  font-family: "Open Sans";
 }
 @media (max-width: 767.98px) {
   .newsletter {

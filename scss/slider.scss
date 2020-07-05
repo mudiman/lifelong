@@ -20,14 +20,17 @@
       width: 60%;
       height: 42px;
       @include media-breakpoint-down(xs) {
+        flex-direction: column;
         width: 100%;
+        bottom: 43px;
       }
       p {
         font: normal normal normal 14px/1.4em futura-lt-w01-light,sans-serif;
         padding: 10px;
         @include media-breakpoint-down(xs) {
+          margin-bottom: 13px;
+          padding-bottom: 0;
           white-space: nowrap;
-          overflow: hidden;
           text-overflow: ellipsis;
         }
       }

@@ -23,6 +23,7 @@
       height: 100%;
       @include media-breakpoint-down(md) {
         height: 50%;
+        margin-bottom: 30px;
       }
 
       img {
@@ -47,6 +48,7 @@
       text-align: center;
       @include media-breakpoint-down(md) {
         height: 50%;
+        order: -1;
       }
 
       img {
@@ -63,9 +65,7 @@
   .apply_now__container {
 
     .apply_now__container__img {
-      @include media-breakpoint-down(md) {
-        margin-bottom: 30px;
-      }
+
     }
   }
 }
