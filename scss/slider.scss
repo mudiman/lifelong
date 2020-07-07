@@ -13,57 +13,53 @@
     }
     &__message {
       position: absolute;
-      bottom: 34px;
+      bottom: 0px;
       left: 0;
       background-color: $theme-main-secondary-color;
       color: white;
       width: 60%;
       height: 42px;
-      @include media-breakpoint-down(xs) {
+      @include media-breakpoint-down(md) {
         flex-direction: column;
         width: 100%;
-        bottom: 43px;
+        height: auto;
+        position: relative;
       }
       p {
         font: normal normal normal 14px/1.4em futura-lt-w01-light,sans-serif;
         padding: 10px;
-        @include media-breakpoint-down(xs) {
+        @include media-breakpoint-down(md) {
           margin-bottom: 13px;
           padding-bottom: 0;
           white-space: nowrap;
           text-overflow: ellipsis;
         }
       }
-      &__offset{
-        background-color: $maron;
+      &__offset0 {
+        background-color: $theme-main-third-color;
         margin-left: auto;
         height: 100%;
-        display: flex;
-      }
-    }
-    &__button_container {
-      position: absolute;
-      right: 10%;
-      top: 50%;
-      @include media-breakpoint-down(md) {
-        top: 32%;
-      }
-      button {
-        display: block;
-        color: white;
-        width: 320px;
-        height: 70px;
-        background-color: rgba(75, 18, 27, 1);
-        border-radius: 0px;
+        width: 4%;
+        margin-left: auto;
         @include media-breakpoint-down(md) {
-          width: 115px;
-          height: 50px;
+          height: 0;
+          width: 0;
         }
-        &:hover {
-          background-color: #810304;
-          color:white;
+      }
+      &__offset{
+        background-color: $maron;
+        height: 100%;
+        display: flex;
+        @include media-breakpoint-down(md) {
+          background-color: #320F14;
+        }
+        button {
+          @include media-breakpoint-down(md) {
+            margin-left: auto;
+          }
         }
       }
     }
+
   }
 }

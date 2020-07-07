@@ -3,17 +3,11 @@
         $('#navbars-menu').toggle();
         $('.navbar-icon-close').css('display', 'inline-block');
         $('.navbar-icon').hide();
-        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            disableScroll();
-        }
     });
     $('.navbar-icon-close').on('click', function () {
         $('#navbars-menu').toggle();
         $('.navbar-icon-close').hide();
         $('.navbar-icon').show();
-        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            enableScroll();
-        }
     });
     $('.dropdown-menu show').on('click', function () {
         $(this).toggleClass('open');
@@ -36,38 +30,8 @@
             arrows:false,
             speed: 300,
         });
-        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            $(window).on('scroll', function () {
-                if ($('#navbars-menu').css('display') == 'block'
-                    && window.scrollY > 250) {
-                    window.scrollTo(0, 250);
-                }
-            });
-        }
-
-
     });
     if (typeof universalParallax !== 'undefined') {
         new universalParallax().init();
     }
-
-
 })(jQuery);
-
-function disableScroll() {
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        return;
-    }
-    // Get the current page scroll position
-    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-
-        // if any scroll is attempted, set this to the previous value
-        window.onscroll = function() {
-            window.scrollTo(scrollLeft, scrollTop);
-        };
-}
-
-function enableScroll() {
-    window.onscroll = function() {};
-}

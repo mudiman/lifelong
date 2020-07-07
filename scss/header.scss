@@ -1,0 +1,169 @@
+.navbar {
+  padding: 0;
+  color: $white;
+  background-color: $theme-main-color;
+
+  &__contact {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1px;
+    height: 25px;
+    background-color: #320F14;
+
+    .container {
+      justify-content: flex-end;
+      font-size: 13px;
+    }
+
+    a:hover {
+      color: white;
+      text-decoration: none;
+    }
+
+    a:first-of-type {
+      margin-right: 20px;
+    }
+  }
+
+  .navbar__menu {
+    position: relative;
+    left: -18px;
+    bottom: -13px;
+    @supports (-ms-ime-align:auto) {
+      left: 0;
+    }
+    @include media-breakpoint-down(xs) {
+      bottom: -15px;
+    }
+
+    .navbar-icon {
+      img {
+        fill: white;
+      }
+    }
+
+    .navbar-icon-close {
+      display: none;
+
+    }
+
+    .menu-lbl {
+      margin-left: 5px;
+    }
+  }
+
+  &__primary {
+    width: 100%;
+    height: 70px;
+    background-color: $theme-main-color;
+    @include media-breakpoint-down(xs) {
+      height: 76px;
+    }
+
+    .navbar__primary_container {
+      flex-direction: row;
+      width: 100%;
+      align-self: center;
+      @include media-breakpoint-down(xs) {
+        width: 115px;
+        right: 0;
+      }
+    }
+
+    .navbar-brand {
+      margin-right: 0;
+    }
+
+    .logo {
+      z-index: 2;
+      position: relative;
+
+      > img {
+        width: 10rem;
+        height: 10rem;
+        object-fit: cover;
+        margin-bottom: 15px;
+        shape-outside: circle();
+        float: left;
+        margin-right: 50px;
+        margin-top: -21px;
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          margin-right: 7px;
+        }
+        @supports (-ms-ime-align:auto) {
+          margin-right: 7px;
+        }
+        @include media-breakpoint-down(xs) {
+          width: 115px;
+          height: 115px;
+          margin-left: -10px;
+          margin-right: 19px;
+          margin-top: -21px;
+        }
+      }
+    }
+
+    .navbar-title {
+      font-size: 15px;
+      margin-bottom: 0;
+      line-height: 18px;
+      padding-top: 4px;
+      font-family: $font-main-1;
+      @include media-breakpoint-down(xs) {
+        margin: auto;
+      }
+
+      .arabic-text {
+        font-family: $font-main-ar;
+        font-size: 15px;
+        margin-left: -7px;
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          margin-left: 0px;
+        }
+        @supports (-ms-ime-align:auto) {
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+
+  &__menu {
+
+    @include media-breakpoint-down(xs) {
+      margin-left: unset;
+    }
+  }
+
+  &__secondary {
+    width: 100%;
+    height: 44px;
+    background-color: #8B0000;
+    opacity: 0.85;
+    position: absolute;
+    top: 96px;
+    z-index: 1;
+
+    @include media-breakpoint-down(xs) {
+      top: 102px;
+      height: 35px;
+      justify-content: flex-end !important;
+      padding-right: 10px;
+    }
+
+    p {
+      margin-bottom: 0px;
+      position: absolute;
+      left: 15%;
+      @include media-breakpoint-down(lg) {
+        left: 20%;
+      }
+      @include media-breakpoint-down(md) {
+        left: 25%;
+      }
+      @include media-breakpoint-down(xs) {
+        left: 28%;
+      }
+    }
+  }
+}
