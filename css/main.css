@@ -37984,7 +37984,7 @@ readers do not read off random characters that represent icons */
 .navbars-menu {
   display: none;
   z-index: 1060;
-  background-color: rgba(203, 208, 214, 0.9);
+  background-color: rgba(203, 208, 214, 0.95);
   padding-top: 50px;
   position: absolute;
   top: 140px;
@@ -38060,17 +38060,16 @@ readers do not read off random characters that represent icons */
   font-family: "Google Basic", sans-serif;
 }
 .navbars-menu .navbar-mobile {
-  position: absolute;
+  position: relative;
   width: 100%;
   top: 0px;
   z-index: 2;
-  height: 100%;
   text-align: center;
-}
-@media (max-width: 991.98px) {
-  .navbars-menu .navbar-mobile {
-    position: relative;
-  }
+  height: 80vh;
+  /* The main point: */
+  overflow-y: auto;
+  /* Optional but highly reccomended: enables momentum scrolling on iOS */
+  -webkit-overflow-scrolling: touch;
 }
 .navbars-menu .navbar-mobile .navbar-nav {
   margin-top: 40px;
@@ -38093,8 +38092,10 @@ readers do not read off random characters that represent icons */
 }
 .navbars-menu .navbar-mobile .navbar-nav li.nav-item a.dropdown-toggle {
   font-family: "Google Basic", sans-serif;
-  color: #320F14;
+  color: #4B121B;
+  font-weight: 700;
   outline: none;
+  font-size: 17px;
 }
 .navbars-menu .navbar-mobile .navbar-nav li.nav-item a.dropdown-toggle::before {
   display: inline-block;
@@ -38113,17 +38114,21 @@ readers do not read off random characters that represent icons */
   display: none;
 }
 .navbars-menu .navbar-mobile .navbar-nav li .dropdown-menu {
-  background-color: #cbd0d6;
+  background-color: rgba(203, 208, 214, 0.1);
   width: 100%;
   border: none;
   text-align: center;
 }
 .navbars-menu .navbar-mobile .navbar-nav li .dropdown-menu a.dropdown-item {
   padding: 0px;
+  font-size: 17px;
   font-weight: normal !important;
   font-family: "Google Open Sans", sans-serif;
   outline: none;
   color: #8B0000;
+}
+.navbars-menu .navbar-mobile .navbar-nav li .dropdown-menu a.dropdown-item:hover, .navbars-menu .navbar-mobile .navbar-nav li .dropdown-menu a.dropdown-item:active {
+  background-color: rgba(203, 208, 214, 0.1);
 }
 .navbars-menu .navbar-mobile .navbar-nav li .dropdown-menu a.dropdown-item.active {
   color: black;
@@ -38235,6 +38240,10 @@ a {
 .ready {
   font-weight: 700;
   color: #4B121B;
+}
+
+.fixedPosition {
+  position: fixed;
 }
 
 .highlights {
@@ -38432,7 +38441,7 @@ a {
 @media (max-width: 991.98px) {
   .apply_now, .apply_now_1, .apply_now_2 {
     padding-top: 10px;
-    height: 358.4px;
+    height: 425px;
   }
 }
 .apply_now .container, .apply_now_1 .container, .apply_now_2 .container {
@@ -38450,8 +38459,7 @@ a {
 }
 @media (max-width: 991.98px) {
   .apply_now__container__img, .apply_now_1__container__img, .apply_now_2__container__img {
-    height: 50%;
-    margin-bottom: 40px;
+    height: 70%;
   }
 }
 .apply_now__container__img img, .apply_now_1__container__img img, .apply_now_2__container__img img {
@@ -38460,7 +38468,8 @@ a {
 }
 @media (max-width: 991.98px) {
   .apply_now__container__img img, .apply_now_1__container__img img, .apply_now_2__container__img img {
-    height: 90%;
+    height: 80%;
+    margin-right: 30px;
   }
 }
 .apply_now__container__img button, .apply_now_1__container__img button, .apply_now_2__container__img button {
@@ -38478,13 +38487,18 @@ a {
 }
 @media (max-width: 991.98px) {
   .apply_now__container__msg, .apply_now_1__container__msg, .apply_now_2__container__msg {
-    height: 50%;
+    height: 30%;
     order: -1;
   }
 }
 .apply_now__container__msg img, .apply_now_1__container__msg img, .apply_now_2__container__msg img {
   height: 75%;
   object-fit: contain;
+}
+@media (max-width: 991.98px) {
+  .apply_now__container__msg img, .apply_now_1__container__msg img, .apply_now_2__container__msg img {
+    height: 100%;
+  }
 }
 
 .apply_now_1 {
@@ -39735,6 +39749,8 @@ html, body {
 
 body {
   position: relative;
+  overflow: visible;
+  height: 100%;
 }
 body h1, body h2, body h3, body h4, body h5, body a {
   font-family: "Google Basic", sans-serif;

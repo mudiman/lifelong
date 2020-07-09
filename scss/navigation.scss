@@ -1,7 +1,7 @@
 .navbars-menu {
   display: none;
   z-index: 1060;
-  background-color: rgb(203, 208, 214, 0.9);
+  background-color: $mobile-menu-background;
   padding-top: 50px;
   position: absolute;
   top: 140px;
@@ -77,15 +77,16 @@
   }
 
   .navbar-mobile {
-    position: absolute;
+    position: relative;
     width: 100%;
     top: 0px;
     z-index: 2;
-    height: 100%;
     text-align: center;
-    @include media-breakpoint-down(md) {
-      position: relative;
-    }
+    height: 80vh;
+    /* The main point: */
+    overflow-y: auto;
+    /* Optional but highly reccomended: enables momentum scrolling on iOS */
+    -webkit-overflow-scrolling: touch;
 
     .navbar-nav {
       margin-top: 40px;
@@ -109,9 +110,10 @@
 
           a.dropdown-toggle {
             font-family: $font-main-1;
-            color: #320F14;
+            color: #4B121B;
+            font-weight:700;
             outline: none;
-
+            font-size: 17px;
             &::before {
               display: inline-block;
               margin-left: 0.255em;
@@ -135,18 +137,20 @@
         }
 
         .dropdown-menu {
-          background-color: rgb(203, 208, 214);
+          background-color: rgb(203, 208, 214, 0.1);
           width: 100%;
           border: none;
           text-align: center;
-
           a.dropdown-item {
             padding: 0px;
+            font-size: 17px;
             font-weight: normal !important;
             font-family: $font-main;
             outline: none;
             color: #8B0000;
-
+            &:hover, &:active {
+              background-color: rgb(203, 208, 214, 0.1);
+            }
             &.active {
               color: black;
             }

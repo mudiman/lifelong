@@ -42,6 +42,8 @@ html, body {
 }
 body {
   position: relative;
+  overflow: visible;
+  height: 100%;
   h1,h2,h3,h4,h5,a {
     font-family: $font-main-1;
   }
