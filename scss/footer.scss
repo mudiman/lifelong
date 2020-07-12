@@ -5,6 +5,7 @@
   padding-bottom: 0px;
   a {
     color: $white;
+    font-family: $font-main;
   }
   &__middle {
     padding-top: 15px;
@@ -39,7 +40,7 @@
     .footer-menu {
       a {
         font-size: 14px;
-        font-family: "Google Open Sans", sans-serif;
+        font-family: $font-main;
       }
     }
     &__third {
@@ -51,7 +52,7 @@
     .footer__email {
       a {
         font-size: 14px;
-        font-family: "Google Open Sans", sans-serif;
+        font-family: $font-main;
       }
     }
   }
@@ -86,7 +87,7 @@
     .connect_with_us {
       margin-bottom: 0px;
       font-size: 14px;
-      font-family: "Google Open Sans", sans-serif;
+      font-family: $font-main;
     }
 
     .social-icons {

@@ -22,15 +22,15 @@
       flex-direction: column;
       height: 100%;
       @include media-breakpoint-down(md) {
-        height: 70%;
-
+        height: 60%;
+        margin-bottom: 20px;
       }
 
       img {
         height: 65%;
         object-fit: contain;
         @include media-breakpoint-down(md) {
-          height: 80%;
+          height: 70%;
           margin-right: 30px;
         }
       }
@@ -48,7 +48,7 @@
       height: 100%;
       text-align: center;
       @include media-breakpoint-down(md) {
-        height: 30%;
+        height: 35%;
         order: -1;
       }
 

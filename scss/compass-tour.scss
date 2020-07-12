@@ -23,6 +23,7 @@
     justify-content: center;
     height: 78px;
     margin: 0px;
+
     @include media-breakpoint-down(xs) {
       width: 100%;
       top: 54%;
